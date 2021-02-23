@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Login-KickStarter' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Login-KickStarter
+  pod 'ReactiveSwift', '~> 6.1'
+
+  target 'Login-KickStarterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Login-KickStarterUITests' do
+    # Pods for testing
+  end
+
+end

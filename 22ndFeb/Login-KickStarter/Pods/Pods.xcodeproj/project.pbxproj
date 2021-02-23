@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0681EF9707D9CC4F69FE11D3C48C0659 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AF7B72E5CE1F6E42F9D7221E7B172 /* FoundationExtensions.swift */; };
+		0810484E07381D9DDB7FA921D1AE5624 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCC566D14A7A98645F6073BF9FCCF1 /* ResultExtensions.swift */; };
+		16A4908292BDCF65068B33C605CCA64F /* Pods-Login-KickStarterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3E172A3D5CFC646E009DCCC219B97C /* Pods-Login-KickStarterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		212E37330B2EE9058E21C03B04BDC0F9 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8017919D9AB7624BC735E6671EE6782 /* Deprecations+Removals.swift */; };
+		259BE7147C34DF767EE744B3370963A3 /* ReactiveSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8551D498801B2CE1D9A7A126AE7A5F50 /* ReactiveSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEF2CF5FB56FF6949B715C255A8D316 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E933B30B036D30B3141DABA057733 /* SignalProducer.swift */; };
+		51EA4D0F33C66DB2505645FFE31CD7AF /* UnidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AE4E360D15A9AE404E4094D282197 /* UnidirectionalBinding.swift */; };
+		53267AC8D59401E882954F0ADD24B87F /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8FEBE7D17E2E7AD7C139BCDCC1FCE5 /* Flatten.swift */; };
+		60545BD390D473F5F2EDD0B356D768AA /* Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 003DA77A0371C3610B8E8949230C0D31 /* Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m */; };
+		69182AEC6A4022999099278A5977494A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8F0FDDEF4253E0C0DE0E901490B2B3 /* Event.swift */; };
+		6D59D8BAC5B3723B390094A96CCB060A /* ReactiveSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F43DD03FBAE861012720617352506 /* ReactiveSwift-dummy.m */; };
+		754ADE52D9972F60BCDD9113BC452C32 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266369E93EB2B598C0742EB7CC434DC /* Atomic.swift */; };
+		7C9EFBE6B93212C73D12DABF15FBA9EA /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0EADAB55D5412A54DCEEABB368235E /* Property.swift */; };
+		88296C90ACB3968788ED9C7D53D661A5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4678138FDECFA02664A4C6DECDCBE /* Optional.swift */; };
+		8B4CBF7AD5DDA658BCB7E8D939F1A829 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D2904B214ECDE9217E430C935F699 /* Observer.swift */; };
+		8E10D1338B7F38857F5590C8C1D6E8C0 /* Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D59B81092C413DA47647C323E2BDF1D2 /* Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		903F5D7445CCBE92F6F6B9AE7431A756 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70E7B582E66D207E860DAC08270ABD /* Action.swift */; };
+		AEEDEBC3E4C4F888DF8344C36B01ACAA /* Pods-Login-KickStarterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A18A939C508152EC5CB3A6ECF27EA3F6 /* Pods-Login-KickStarterTests-dummy.m */; };
+		B397928461945EC67D0C863EBE61899C /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346CA0AC1556939C42A4102217DAFAD9 /* Reactive.swift */; };
+		B8BE116CA5E397BA8C0D11ED679A6CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BAEF9CEF2AE7BC78522CABDD33699BFF /* ValidatingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7024FD6C35F05209BC7416B5FBB1 /* ValidatingProperty.swift */; };
+		BB0A800EDA70827B28B4B2E28B96C6E8 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09736281FC837D44D58212A0799BF153 /* Signal.swift */; };
+		BCA62AF4479783CEBC1A9443D1A7FFEA /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0222894EA895200A4EB8FC5E5B4C /* EventLogger.swift */; };
+		C160265F6A9F68CE10C9956A9B808CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C47662C1EF5D5DCDAC5C993EE18AC095 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27722424FC0A5FA3579198B1968977C8 /* Disposable.swift */; };
+		C546DEDBCDA4AA154CC1447DE39397FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DDD1698D35501DCFF3B731E906D80F18 /* UninhabitedTypeGuards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0AC5DFF0EF3D051673DD81A90A60F1 /* UninhabitedTypeGuards.swift */; };
+		DF360C1457FB10DDE0204BBCB00646EE /* Pods-Login-KickStarter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60627E8A1901C7EE76AF9DAA1DC3C443 /* Pods-Login-KickStarter-dummy.m */; };
+		E0308CBE21DE89A7AA62551F16578304 /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACCF16084D1615AE6FE4DF545D7062 /* Lifetime.swift */; };
+		E4C4F3E52516A9C5E3A18CE8CFBB4E13 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71558E75590259AB555B34FE0687831 /* Scheduler.swift */; };
+		E5A0C334AA8D8BDF9584A77B64F55599 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400514A4838EFE5FABC0ADE9E39EBAC /* Bag.swift */; };
+		FBD78F146AAB5A02CB75689E28C8D551 /* Pods-Login-KickStarter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 295E717491FE2E08936CC7980C27B858 /* Pods-Login-KickStarter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCDE2EC8A46A3B616371FDAAB0F92FEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C76C5D0E61E6FBAFF3F53BA5BF24E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08B8EF1A02DE30CBEFB370FFE1C123C0;
+			remoteInfo = ReactiveSwift;
+		};
+		5E0B4BA0714D967BECEFB68BEC042E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08B8EF1A02DE30CBEFB370FFE1C123C0;
+			remoteInfo = ReactiveSwift;
+		};
+		9DC770FAF643EC13F698C23CED0A66CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C445C0567A86A2A7DEB4A7EB3CEB8E4C;
+			remoteInfo = "Pods-Login-KickStarter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003DA77A0371C3610B8E8949230C0D31 /* Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m"; sourceTree = "<group>"; };
+		009FBEAEECE79E93047306FC3406F377 /* Pods-Login-KickStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarterTests.release.xcconfig"; sourceTree = "<group>"; };
+		0752F8EFC8A85864FF0F9205C69B2219 /* Pods-Login-KickStarter-Login-KickStarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarter-Login-KickStarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		09736281FC837D44D58212A0799BF153 /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = Sources/Signal.swift; sourceTree = "<group>"; };
+		11D545A297CB9920C5674BB3DE7CF81F /* Pods-Login-KickStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarter.release.xcconfig"; sourceTree = "<group>"; };
+		16BC7024FD6C35F05209BC7416B5FBB1 /* ValidatingProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatingProperty.swift; path = Sources/ValidatingProperty.swift; sourceTree = "<group>"; };
+		1A34C6CF1C2A552D16EC89ADFE123E03 /* Pods-Login-KickStarter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Login-KickStarter.modulemap"; sourceTree = "<group>"; };
+		1A6AE4E360D15A9AE404E4094D282197 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnidirectionalBinding.swift; path = Sources/UnidirectionalBinding.swift; sourceTree = "<group>"; };
+		1AE2B6C5D79A7A3AA9333D997971C929 /* Pods-Login-KickStarter-Login-KickStarterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarter-Login-KickStarterUITests-Info.plist"; sourceTree = "<group>"; };
+		1D2E933B30B036D30B3141DABA057733 /* SignalProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducer.swift; path = Sources/SignalProducer.swift; sourceTree = "<group>"; };
+		25038B487B092E53CF4AE98D2DB8A264 /* Pods_Login_KickStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Login_KickStarter.framework; path = "Pods-Login-KickStarter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27722424FC0A5FA3579198B1968977C8 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Sources/Disposable.swift; sourceTree = "<group>"; };
+		295E717491FE2E08936CC7980C27B858 /* Pods-Login-KickStarter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Login-KickStarter-umbrella.h"; sourceTree = "<group>"; };
+		2B142FC665FD33975FA7957E80312287 /* Pods_Login_KickStarterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Login_KickStarterTests.framework; path = "Pods-Login-KickStarterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		346CA0AC1556939C42A4102217DAFAD9 /* Reactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reactive.swift; path = Sources/Reactive.swift; sourceTree = "<group>"; };
+		44F83CF77AE39FECAA0EE99BCCC273BC /* Pods-Login-KickStarter-Login-KickStarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarter-Login-KickStarterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45C189345DD2CF453E841674B0579D44 /* Pods-Login-KickStarter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarter-acknowledgements.plist"; sourceTree = "<group>"; };
+		46ACCF16084D1615AE6FE4DF545D7062 /* Lifetime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lifetime.swift; path = Sources/Lifetime.swift; sourceTree = "<group>"; };
+		4B3E172A3D5CFC646E009DCCC219B97C /* Pods-Login-KickStarterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Login-KickStarterTests-umbrella.h"; sourceTree = "<group>"; };
+		4F20A0562A1F190ECB5597EC4086DCF6 /* Pods-Login-KickStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58F4678138FDECFA02664A4C6DECDCBE /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Optional.swift; sourceTree = "<group>"; };
+		5B0EADAB55D5412A54DCEEABB368235E /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Sources/Property.swift; sourceTree = "<group>"; };
+		5C3A8B9F7D6D0E562D96222E066A45B6 /* ReactiveSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-prefix.pch"; sourceTree = "<group>"; };
+		5E02244BA4C6CA780A80DD1C09B88208 /* Pods-Login-KickStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login-KickStarter.debug.xcconfig"; sourceTree = "<group>"; };
+		5EAFAA39E5B68CB99860DD8A9DE38BB6 /* ReactiveSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveSwift.release.xcconfig; sourceTree = "<group>"; };
+		60627E8A1901C7EE76AF9DAA1DC3C443 /* Pods-Login-KickStarter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Login-KickStarter-dummy.m"; sourceTree = "<group>"; };
+		69C56A47E08151E9598C6708327FAC4D /* Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C09D85F46C1DF1BAC49723321104B66 /* Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7578E13B0C53BB0B01ABE87D2AFB38E1 /* ReactiveSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReactiveSwift-Info.plist"; sourceTree = "<group>"; };
+		786D2904B214ECDE9217E430C935F699 /* Observer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observer.swift; path = Sources/Observer.swift; sourceTree = "<group>"; };
+		7C0AC5DFF0EF3D051673DD81A90A60F1 /* UninhabitedTypeGuards.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UninhabitedTypeGuards.swift; path = Sources/UninhabitedTypeGuards.swift; sourceTree = "<group>"; };
+		7E7F43DD03FBAE861012720617352506 /* ReactiveSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveSwift-dummy.m"; sourceTree = "<group>"; };
+		807F26F2C0F16F81B637331126E9256B /* ReactiveSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveSwift.modulemap; sourceTree = "<group>"; };
+		8551D498801B2CE1D9A7A126AE7A5F50 /* ReactiveSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-umbrella.h"; sourceTree = "<group>"; };
+		8B2B86FBCAEF11F0F3AB6CD6E7E7AC7B /* Pods-Login-KickStarter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarter-Info.plist"; sourceTree = "<group>"; };
+		9078E9512DF75363FE3565E6952DC0BF /* Pods-Login-KickStarter-Login-KickStarterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Login-KickStarter-Login-KickStarterUITests.modulemap"; sourceTree = "<group>"; };
+		9249A278069030F78E020FF71166DF01 /* Pods-Login-KickStarterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Login-KickStarterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A18A939C508152EC5CB3A6ECF27EA3F6 /* Pods-Login-KickStarterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Login-KickStarterTests-dummy.m"; sourceTree = "<group>"; };
+		A71B457AA73B77D2965CDC60F26A015A /* Pods_Login_KickStarter_Login_KickStarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Login_KickStarter_Login_KickStarterUITests.framework; path = "Pods-Login-KickStarter-Login-KickStarterUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFD738A7FD2D990A9DFFE5353153279 /* Pods-Login-KickStarterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarterTests-Info.plist"; sourceTree = "<group>"; };
+		B1E23EB65639D5F98557AE83A90EB99E /* Pods-Login-KickStarter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Login-KickStarter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B266369E93EB2B598C0742EB7CC434DC /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Atomic.swift; sourceTree = "<group>"; };
+		BD8FEBE7D17E2E7AD7C139BCDCC1FCE5 /* Flatten.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flatten.swift; path = Sources/Flatten.swift; sourceTree = "<group>"; };
+		BE8F0FDDEF4253E0C0DE0E901490B2B3 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
+		C8017919D9AB7624BC735E6671EE6782 /* Deprecations+Removals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deprecations+Removals.swift"; path = "Sources/Deprecations+Removals.swift"; sourceTree = "<group>"; };
+		CF70E7B582E66D207E860DAC08270ABD /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
+		D23A2D6DBCA011DDEC52D63405E70779 /* ReactiveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveSwift.debug.xcconfig; sourceTree = "<group>"; };
+		D400514A4838EFE5FABC0ADE9E39EBAC /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Sources/Bag.swift; sourceTree = "<group>"; };
+		D59B81092C413DA47647C323E2BDF1D2 /* Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h"; sourceTree = "<group>"; };
+		DF105C465A9980C218A59EC061582862 /* Pods-Login-KickStarterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Login-KickStarterTests.modulemap"; sourceTree = "<group>"; };
+		E71558E75590259AB555B34FE0687831 /* Scheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = Sources/Scheduler.swift; sourceTree = "<group>"; };
+		E94D0222894EA895200A4EB8FC5E5B4C /* EventLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventLogger.swift; path = Sources/EventLogger.swift; sourceTree = "<group>"; };
+		E968F9BCCCEA1C3EE2B6718FDD605D1F /* Pods-Login-KickStarter-Login-KickStarterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Login-KickStarter-Login-KickStarterUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EDBDCB4FA932AE56F7A610E5C1020C7C /* Pods-Login-KickStarterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-KickStarterTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F05EB871E49ED23D37316411A20195E6 /* Pods-Login-KickStarter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Login-KickStarter-frameworks.sh"; sourceTree = "<group>"; };
+		F44AF7B72E5CE1F6E42F9D7221E7B172 /* FoundationExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationExtensions.swift; path = Sources/FoundationExtensions.swift; sourceTree = "<group>"; };
+		F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveSwift.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDCC566D14A7A98645F6073BF9FCCF1 /* ResultExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultExtensions.swift; path = Sources/ResultExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A2E0FC85711CF774572AEDD363592C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160265F6A9F68CE10C9956A9B808CDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87A1F6E6DA4E6F039D498EC7C788588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BE116CA5E397BA8C0D11ED679A6CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58E2F060D702FFE777DDC011439D502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDE2EC8A46A3B616371FDAAB0F92FEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EC06FF9776D410D279CB9A0C1CE934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C546DEDBCDA4AA154CC1447DE39397FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09720241146129CDE219CFB48B7CB4FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60C8A6F869A9258827360C4FC6530A3C /* ReactiveSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		378E9626D745FB214FE4D004ABCA8698 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8D1B11F771CBE439371110A1D988F /* Pods-Login-KickStarter */,
+				8D0FBD6BEE0D4386C5BE0D1C2FCB8AEE /* Pods-Login-KickStarter-Login-KickStarterUITests */,
+				D2EA11C7A418ACECB0597CD4A6F57439 /* Pods-Login-KickStarterTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		60C8A6F869A9258827360C4FC6530A3C /* ReactiveSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CF70E7B582E66D207E860DAC08270ABD /* Action.swift */,
+				B266369E93EB2B598C0742EB7CC434DC /* Atomic.swift */,
+				D400514A4838EFE5FABC0ADE9E39EBAC /* Bag.swift */,
+				C8017919D9AB7624BC735E6671EE6782 /* Deprecations+Removals.swift */,
+				27722424FC0A5FA3579198B1968977C8 /* Disposable.swift */,
+				BE8F0FDDEF4253E0C0DE0E901490B2B3 /* Event.swift */,
+				E94D0222894EA895200A4EB8FC5E5B4C /* EventLogger.swift */,
+				BD8FEBE7D17E2E7AD7C139BCDCC1FCE5 /* Flatten.swift */,
+				F44AF7B72E5CE1F6E42F9D7221E7B172 /* FoundationExtensions.swift */,
+				46ACCF16084D1615AE6FE4DF545D7062 /* Lifetime.swift */,
+				786D2904B214ECDE9217E430C935F699 /* Observer.swift */,
+				58F4678138FDECFA02664A4C6DECDCBE /* Optional.swift */,
+				5B0EADAB55D5412A54DCEEABB368235E /* Property.swift */,
+				346CA0AC1556939C42A4102217DAFAD9 /* Reactive.swift */,
+				FFDCC566D14A7A98645F6073BF9FCCF1 /* ResultExtensions.swift */,
+				E71558E75590259AB555B34FE0687831 /* Scheduler.swift */,
+				09736281FC837D44D58212A0799BF153 /* Signal.swift */,
+				1D2E933B30B036D30B3141DABA057733 /* SignalProducer.swift */,
+				1A6AE4E360D15A9AE404E4094D282197 /* UnidirectionalBinding.swift */,
+				7C0AC5DFF0EF3D051673DD81A90A60F1 /* UninhabitedTypeGuards.swift */,
+				16BC7024FD6C35F05209BC7416B5FBB1 /* ValidatingProperty.swift */,
+				CC35205B3839A9672C172F95EFD1AE51 /* Support Files */,
+			);
+			name = ReactiveSwift;
+			path = ReactiveSwift;
+			sourceTree = "<group>";
+		};
+		8D0FBD6BEE0D4386C5BE0D1C2FCB8AEE /* Pods-Login-KickStarter-Login-KickStarterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9078E9512DF75363FE3565E6952DC0BF /* Pods-Login-KickStarter-Login-KickStarterUITests.modulemap */,
+				69C56A47E08151E9598C6708327FAC4D /* Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.markdown */,
+				6C09D85F46C1DF1BAC49723321104B66 /* Pods-Login-KickStarter-Login-KickStarterUITests-acknowledgements.plist */,
+				003DA77A0371C3610B8E8949230C0D31 /* Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m */,
+				E968F9BCCCEA1C3EE2B6718FDD605D1F /* Pods-Login-KickStarter-Login-KickStarterUITests-frameworks.sh */,
+				1AE2B6C5D79A7A3AA9333D997971C929 /* Pods-Login-KickStarter-Login-KickStarterUITests-Info.plist */,
+				D59B81092C413DA47647C323E2BDF1D2 /* Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h */,
+				0752F8EFC8A85864FF0F9205C69B2219 /* Pods-Login-KickStarter-Login-KickStarterUITests.debug.xcconfig */,
+				44F83CF77AE39FECAA0EE99BCCC273BC /* Pods-Login-KickStarter-Login-KickStarterUITests.release.xcconfig */,
+			);
+			name = "Pods-Login-KickStarter-Login-KickStarterUITests";
+			path = "Target Support Files/Pods-Login-KickStarter-Login-KickStarterUITests";
+			sourceTree = "<group>";
+		};
+		C0A8D1B11F771CBE439371110A1D988F /* Pods-Login-KickStarter */ = {
+			isa = PBXGroup;
+			children = (
+				1A34C6CF1C2A552D16EC89ADFE123E03 /* Pods-Login-KickStarter.modulemap */,
+				B1E23EB65639D5F98557AE83A90EB99E /* Pods-Login-KickStarter-acknowledgements.markdown */,
+				45C189345DD2CF453E841674B0579D44 /* Pods-Login-KickStarter-acknowledgements.plist */,
+				60627E8A1901C7EE76AF9DAA1DC3C443 /* Pods-Login-KickStarter-dummy.m */,
+				F05EB871E49ED23D37316411A20195E6 /* Pods-Login-KickStarter-frameworks.sh */,
+				8B2B86FBCAEF11F0F3AB6CD6E7E7AC7B /* Pods-Login-KickStarter-Info.plist */,
+				295E717491FE2E08936CC7980C27B858 /* Pods-Login-KickStarter-umbrella.h */,
+				5E02244BA4C6CA780A80DD1C09B88208 /* Pods-Login-KickStarter.debug.xcconfig */,
+				11D545A297CB9920C5674BB3DE7CF81F /* Pods-Login-KickStarter.release.xcconfig */,
+			);
+			name = "Pods-Login-KickStarter";
+			path = "Target Support Files/Pods-Login-KickStarter";
+			sourceTree = "<group>";
+		};
+		CA4C0B8568DBF070D24A6C15799AC778 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25038B487B092E53CF4AE98D2DB8A264 /* Pods_Login_KickStarter.framework */,
+				A71B457AA73B77D2965CDC60F26A015A /* Pods_Login_KickStarter_Login_KickStarterUITests.framework */,
+				2B142FC665FD33975FA7957E80312287 /* Pods_Login_KickStarterTests.framework */,
+				F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC35205B3839A9672C172F95EFD1AE51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				807F26F2C0F16F81B637331126E9256B /* ReactiveSwift.modulemap */,
+				7E7F43DD03FBAE861012720617352506 /* ReactiveSwift-dummy.m */,
+				7578E13B0C53BB0B01ABE87D2AFB38E1 /* ReactiveSwift-Info.plist */,
+				5C3A8B9F7D6D0E562D96222E066A45B6 /* ReactiveSwift-prefix.pch */,
+				8551D498801B2CE1D9A7A126AE7A5F50 /* ReactiveSwift-umbrella.h */,
+				D23A2D6DBCA011DDEC52D63405E70779 /* ReactiveSwift.debug.xcconfig */,
+				5EAFAA39E5B68CB99860DD8A9DE38BB6 /* ReactiveSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReactiveSwift";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				09720241146129CDE219CFB48B7CB4FA /* Pods */,
+				CA4C0B8568DBF070D24A6C15799AC778 /* Products */,
+				378E9626D745FB214FE4D004ABCA8698 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2EA11C7A418ACECB0597CD4A6F57439 /* Pods-Login-KickStarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF105C465A9980C218A59EC061582862 /* Pods-Login-KickStarterTests.modulemap */,
+				9249A278069030F78E020FF71166DF01 /* Pods-Login-KickStarterTests-acknowledgements.markdown */,
+				EDBDCB4FA932AE56F7A610E5C1020C7C /* Pods-Login-KickStarterTests-acknowledgements.plist */,
+				A18A939C508152EC5CB3A6ECF27EA3F6 /* Pods-Login-KickStarterTests-dummy.m */,
+				AFFD738A7FD2D990A9DFFE5353153279 /* Pods-Login-KickStarterTests-Info.plist */,
+				4B3E172A3D5CFC646E009DCCC219B97C /* Pods-Login-KickStarterTests-umbrella.h */,
+				4F20A0562A1F190ECB5597EC4086DCF6 /* Pods-Login-KickStarterTests.debug.xcconfig */,
+				009FBEAEECE79E93047306FC3406F377 /* Pods-Login-KickStarterTests.release.xcconfig */,
+			);
+			name = "Pods-Login-KickStarterTests";
+			path = "Target Support Files/Pods-Login-KickStarterTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2668798E7CC6A448743DD1576AB5E924 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E10D1338B7F38857F5590C8C1D6E8C0 /* Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ED68EA70AE940ECB2AF79F9EE5C064 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259BE7147C34DF767EE744B3370963A3 /* ReactiveSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B469656E40743D706DABA048EC429B9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A4908292BDCF65068B33C605CCA64F /* Pods-Login-KickStarterTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38909CDCD5516E03CD7E11950DDCC45 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD78F146AAB5A02CB75689E28C8D551 /* Pods-Login-KickStarter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08B8EF1A02DE30CBEFB370FFE1C123C0 /* ReactiveSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6C9C10B9D662B4303FC0EBFF60D63D /* Build configuration list for PBXNativeTarget "ReactiveSwift" */;
+			buildPhases = (
+				93ED68EA70AE940ECB2AF79F9EE5C064 /* Headers */,
+				E58294C5CD13B5C7810347D725B24640 /* Sources */,
+				C58E2F060D702FFE777DDC011439D502 /* Frameworks */,
+				0722D854B69D944AA8ACD9451E84653D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveSwift;
+			productName = ReactiveSwift;
+			productReference = F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1DACDB67DF31403F4316628C2BBBE593 /* Pods-Login-KickStarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE883B146FCE608FB02C4D4024BA6CF /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarterTests" */;
+			buildPhases = (
+				B469656E40743D706DABA048EC429B9B /* Headers */,
+				B8FA95FBCAA0064EDF5B691B6D795746 /* Sources */,
+				87A1F6E6DA4E6F039D498EC7C788588A /* Frameworks */,
+				B49F29D9F61468EE7AE0857CCFC7AD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBD3D46E8E094293F23259B6F2E2D6D /* PBXTargetDependency */,
+			);
+			name = "Pods-Login-KickStarterTests";
+			productName = "Pods-Login-KickStarterTests";
+			productReference = 2B142FC665FD33975FA7957E80312287 /* Pods_Login_KickStarterTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C445C0567A86A2A7DEB4A7EB3CEB8E4C /* Pods-Login-KickStarter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062DE47986C5E6424AD029FADD5B7953 /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarter" */;
+			buildPhases = (
+				F38909CDCD5516E03CD7E11950DDCC45 /* Headers */,
+				AF26E0711349863F657F152055A1F297 /* Sources */,
+				7A2E0FC85711CF774572AEDD363592C6 /* Frameworks */,
+				DAEEB95B5C51F1F16C82E51B912A4072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBE177B1559CFA5EB6A4156E148EFBB1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Login-KickStarter";
+			productName = "Pods-Login-KickStarter";
+			productReference = 25038B487B092E53CF4AE98D2DB8A264 /* Pods_Login_KickStarter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4013D76A31CCD964951C3970DB8EC97 /* Pods-Login-KickStarter-Login-KickStarterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB25EAA15907049BD3F166009DB54993 /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarter-Login-KickStarterUITests" */;
+			buildPhases = (
+				2668798E7CC6A448743DD1576AB5E924 /* Headers */,
+				1242B7D51CB07685F40A6F6E010677D7 /* Sources */,
+				D9EC06FF9776D410D279CB9A0C1CE934 /* Frameworks */,
+				53797D4BA50EBF6A22B4E419B236D072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B989101AFD340E5ABE19DFDBC449FD9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Login-KickStarter-Login-KickStarterUITests";
+			productName = "Pods-Login-KickStarter-Login-KickStarterUITests";
+			productReference = A71B457AA73B77D2965CDC60F26A015A /* Pods_Login_KickStarter_Login_KickStarterUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CA4C0B8568DBF070D24A6C15799AC778 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C445C0567A86A2A7DEB4A7EB3CEB8E4C /* Pods-Login-KickStarter */,
+				D4013D76A31CCD964951C3970DB8EC97 /* Pods-Login-KickStarter-Login-KickStarterUITests */,
+				1DACDB67DF31403F4316628C2BBBE593 /* Pods-Login-KickStarterTests */,
+				08B8EF1A02DE30CBEFB370FFE1C123C0 /* ReactiveSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0722D854B69D944AA8ACD9451E84653D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53797D4BA50EBF6A22B4E419B236D072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F29D9F61468EE7AE0857CCFC7AD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEEB95B5C51F1F16C82E51B912A4072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1242B7D51CB07685F40A6F6E010677D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60545BD390D473F5F2EDD0B356D768AA /* Pods-Login-KickStarter-Login-KickStarterUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E0711349863F657F152055A1F297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF360C1457FB10DDE0204BBCB00646EE /* Pods-Login-KickStarter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FA95FBCAA0064EDF5B691B6D795746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEDEBC3E4C4F888DF8344C36B01ACAA /* Pods-Login-KickStarterTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58294C5CD13B5C7810347D725B24640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903F5D7445CCBE92F6F6B9AE7431A756 /* Action.swift in Sources */,
+				754ADE52D9972F60BCDD9113BC452C32 /* Atomic.swift in Sources */,
+				E5A0C334AA8D8BDF9584A77B64F55599 /* Bag.swift in Sources */,
+				212E37330B2EE9058E21C03B04BDC0F9 /* Deprecations+Removals.swift in Sources */,
+				C47662C1EF5D5DCDAC5C993EE18AC095 /* Disposable.swift in Sources */,
+				69182AEC6A4022999099278A5977494A /* Event.swift in Sources */,
+				BCA62AF4479783CEBC1A9443D1A7FFEA /* EventLogger.swift in Sources */,
+				53267AC8D59401E882954F0ADD24B87F /* Flatten.swift in Sources */,
+				0681EF9707D9CC4F69FE11D3C48C0659 /* FoundationExtensions.swift in Sources */,
+				E0308CBE21DE89A7AA62551F16578304 /* Lifetime.swift in Sources */,
+				8B4CBF7AD5DDA658BCB7E8D939F1A829 /* Observer.swift in Sources */,
+				88296C90ACB3968788ED9C7D53D661A5 /* Optional.swift in Sources */,
+				7C9EFBE6B93212C73D12DABF15FBA9EA /* Property.swift in Sources */,
+				B397928461945EC67D0C863EBE61899C /* Reactive.swift in Sources */,
+				6D59D8BAC5B3723B390094A96CCB060A /* ReactiveSwift-dummy.m in Sources */,
+				0810484E07381D9DDB7FA921D1AE5624 /* ResultExtensions.swift in Sources */,
+				E4C4F3E52516A9C5E3A18CE8CFBB4E13 /* Scheduler.swift in Sources */,
+				BB0A800EDA70827B28B4B2E28B96C6E8 /* Signal.swift in Sources */,
+				3BEF2CF5FB56FF6949B715C255A8D316 /* SignalProducer.swift in Sources */,
+				51EA4D0F33C66DB2505645FFE31CD7AF /* UnidirectionalBinding.swift in Sources */,
+				DDD1698D35501DCFF3B731E906D80F18 /* UninhabitedTypeGuards.swift in Sources */,
+				BAEF9CEF2AE7BC78522CABDD33699BFF /* ValidatingProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B989101AFD340E5ABE19DFDBC449FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveSwift;
+			target = 08B8EF1A02DE30CBEFB370FFE1C123C0 /* ReactiveSwift */;
+			targetProxy = 5E0B4BA0714D967BECEFB68BEC042E34 /* PBXContainerItemProxy */;
+		};
+		ACBD3D46E8E094293F23259B6F2E2D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Login-KickStarter";
+			target = C445C0567A86A2A7DEB4A7EB3CEB8E4C /* Pods-Login-KickStarter */;
+			targetProxy = 9DC770FAF643EC13F698C23CED0A66CE /* PBXContainerItemProxy */;
+		};
+		BBE177B1559CFA5EB6A4156E148EFBB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveSwift;
+			target = 08B8EF1A02DE30CBEFB370FFE1C123C0 /* ReactiveSwift */;
+			targetProxy = 4C76C5D0E61E6FBAFF3F53BA5BF24E8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		317E60ECBAABC5E072B6E3A56139362A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 009FBEAEECE79E93047306FC3406F377 /* Pods-Login-KickStarterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarterTests/Pods-Login-KickStarterTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarterTests/Pods-Login-KickStarterTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38340B7391F41EE9CB0C830AA6993774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F20A0562A1F190ECB5597EC4086DCF6 /* Pods-Login-KickStarterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarterTests/Pods-Login-KickStarterTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarterTests/Pods-Login-KickStarterTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67946E829C5277E33B63647520E2BBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23A2D6DBCA011DDEC52D63405E70779 /* ReactiveSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveSwift/ReactiveSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveSwift;
+				PRODUCT_NAME = ReactiveSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70A810135A6F37CF45447AC182F0B8F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EAFAA39E5B68CB99860DD8A9DE38BB6 /* ReactiveSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveSwift/ReactiveSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveSwift;
+				PRODUCT_NAME = ReactiveSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		790EB655B7FE5ED64EF339FB4010CA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0752F8EFC8A85864FF0F9205C69B2219 /* Pods-Login-KickStarter-Login-KickStarterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarter-Login-KickStarterUITests/Pods-Login-KickStarter-Login-KickStarterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarter-Login-KickStarterUITests/Pods-Login-KickStarter-Login-KickStarterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8943F8724958FB7F904EAB4D388D33D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E02244BA4C6CA780A80DD1C09B88208 /* Pods-Login-KickStarter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarter/Pods-Login-KickStarter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarter/Pods-Login-KickStarter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD25D138206875D751E1EA6A6B518CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F83CF77AE39FECAA0EE99BCCC273BC /* Pods-Login-KickStarter-Login-KickStarterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarter-Login-KickStarterUITests/Pods-Login-KickStarter-Login-KickStarterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarter-Login-KickStarterUITests/Pods-Login-KickStarter-Login-KickStarterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB9D437B86EE3FE7D39B9D6A471C5E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D545A297CB9920C5674BB3DE7CF81F /* Pods-Login-KickStarter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Login-KickStarter/Pods-Login-KickStarter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login-KickStarter/Pods-Login-KickStarter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		062DE47986C5E6424AD029FADD5B7953 /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8943F8724958FB7F904EAB4D388D33D2 /* Debug */,
+				FB9D437B86EE3FE7D39B9D6A471C5E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6C9C10B9D662B4303FC0EBFF60D63D /* Build configuration list for PBXNativeTarget "ReactiveSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67946E829C5277E33B63647520E2BBC5 /* Debug */,
+				70A810135A6F37CF45447AC182F0B8F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE883B146FCE608FB02C4D4024BA6CF /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38340B7391F41EE9CB0C830AA6993774 /* Debug */,
+				317E60ECBAABC5E072B6E3A56139362A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB25EAA15907049BD3F166009DB54993 /* Build configuration list for PBXNativeTarget "Pods-Login-KickStarter-Login-KickStarterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790EB655B7FE5ED64EF339FB4010CA43 /* Debug */,
+				CD25D138206875D751E1EA6A6B518CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

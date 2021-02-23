@@ -1,0 +1,6 @@
+framework module Pods_Login_KickStarter_Login_KickStarterUITests {
+  umbrella header "Pods-Login-KickStarter-Login-KickStarterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
