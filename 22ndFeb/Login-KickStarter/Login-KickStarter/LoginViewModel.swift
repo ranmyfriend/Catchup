@@ -7,6 +7,7 @@
 
 import Foundation
 import ReactiveSwift
+//import 
 
 public protocol LoginViewModelInputs {
   /// String value of email textfield text
@@ -54,16 +55,16 @@ public protocol LoginViewModelOutputs {
   var isFormValid: Signal<Bool, Never> { get }
 
   /// Emits an access token envelope that can be used to update the environment.
-  var logIntoEnvironment: Signal<AccessTokenEnvelope, Never> { get }
+//  var logIntoEnvironment: Signal<AccessTokenEnvelope, Never> { get }
 
   /// Emits when the password textfield should become the first responder
   var passwordTextFieldBecomeFirstResponder: Signal<(), Never> { get }
 
   /// Emits when a login success notification should be posted.
-  var postNotification: Signal<(Notification, Notification), Never> { get }
+//  var postNotification: Signal<(Notification, Notification), Never> { get }
 
   /// Emits when a login error has occurred and a message should be displayed.
-  var showError: Signal<String, Never> { get }
+//  var showError: Signal<String, Never> { get }
 
   /// Emits when the reset password screen should be shown
   var showResetPassword: Signal<(), Never> { get }
@@ -72,7 +73,7 @@ public protocol LoginViewModelOutputs {
   var showHidePasswordButtonToggled: Signal<Bool, Never> { get }
 
   /// Emits when TFA is required for login.
-  var tfaChallenge: Signal<(email: String, password: String), Never> { get }
+//  var tfaChallenge: Signal<(email: String, password: String), Never> { get }
 }
 
 public protocol LoginViewModelType {
@@ -97,42 +98,42 @@ public final class LoginViewModel: LoginViewModelType, LoginViewModelInputs, Log
       self.passwordTextFieldDoneEditingProperty.signal
     )
 
-    let loginEvent = emailAndPassword
-      .takeWhen(tryLogin)
-      .switchMap { email, password in
-        AppEnvironment.current.apiService.login(email: email, password: password, code: nil)
-          .materialize()
-      }
+//    let loginEvent = emailAndPassword
+//      .takeWhen(tryLogin)
+//      .switchMap { email, password in
+//        AppEnvironment.current.apiService.login(email: email, password: password, code: nil)
+//          .materialize()
+//      }
 
-    self.logIntoEnvironment = loginEvent.values()
+//    self.logIntoEnvironment = loginEvent.values()
+//
+//    let tfaError = loginEvent.errors()
+//      .filter { $0.ksrCode == .TfaRequired }
+//      .ignoreValues()
 
-    let tfaError = loginEvent.errors()
-      .filter { $0.ksrCode == .TfaRequired }
-      .ignoreValues()
+//    self.tfaChallenge = emailAndPassword
+//      .takeWhen(tfaError)
+//      .map { (email: $0, password: $1) }
 
-    self.tfaChallenge = emailAndPassword
-      .takeWhen(tfaError)
-      .map { (email: $0, password: $1) }
-
-    self.postNotification = self.environmentLoggedInProperty.signal
-      .mapConst(
-        (
-          Notification(name: .ksr_sessionStarted),
-          Notification(
-            name: .ksr_showNotificationsDialog,
-            userInfo: [UserInfoKeys.context: PushNotificationDialog.Context.login]
-          )
-        )
-      )
+//    self.postNotification = self.environmentLoggedInProperty.signal
+//      .mapConst(
+//        (
+//          Notification(name: .ksr_sessionStarted),
+//          Notification(
+//            name: .ksr_showNotificationsDialog,
+//            userInfo: [UserInfoKeys.context: PushNotificationDialog.Context.login]
+//          )
+//        )
+//      )
 
     self.dismissKeyboard = self.passwordTextFieldDoneEditingProperty.signal
     self.passwordTextFieldBecomeFirstResponder = self.emailTextFieldDoneEditingProperty.signal
 
-    self.showError = loginEvent.errors()
-      .filter { $0.ksrCode != .TfaRequired }
-      .map { env in
-        env.errorMessages.first ?? Strings.login_errors_unable_to_log_in()
-      }
+//    self.showError = loginEvent.errors()
+//      .filter { $0.ksrCode != .TfaRequired }
+//      .map { env in
+//        env.errorMessages.first ?? Strings.login_errors_unable_to_log_in()
+//      }
 
     self.showResetPassword = self.resetPasswordPressedProperty.signal
 
@@ -141,8 +142,8 @@ public final class LoginViewModel: LoginViewModelType, LoginViewModelInputs, Log
       self.shouldShowPasswordProperty.signal.takeWhen(self.traitCollectionDidChangeProperty.signal)
     )
 
-    tryLogin
-      .observeValues { AppEnvironment.current.ksrAnalytics.trackLoginSubmitButtonClicked() }
+//    tryLogin
+//      .observeValues { AppEnvironment.current.ksrAnalytics.trackLoginSubmitButtonClicked() }
   }
 
   public var inputs: LoginViewModelInputs { return self }
@@ -206,13 +207,13 @@ public final class LoginViewModel: LoginViewModelType, LoginViewModelInputs, Log
   public let dismissKeyboard: Signal<(), Never>
   public let emailTextFieldBecomeFirstResponder: Signal<(), Never>
   public let isFormValid: Signal<Bool, Never>
-  public let logIntoEnvironment: Signal<AccessTokenEnvelope, Never>
+//  public let logIntoEnvironment: Signal<AccessTokenEnvelope, Never>
   public let passwordTextFieldBecomeFirstResponder: Signal<(), Never>
-  public let postNotification: Signal<(Notification, Notification), Never>
-  public let showError: Signal<String, Never>
+//  public let postNotification: Signal<(Notification, Notification), Never>
+//  public let showError: Signal<String, Never>
   public let showResetPassword: Signal<(), Never>
   public let showHidePasswordButtonToggled: Signal<Bool, Never>
-  public let tfaChallenge: Signal<(email: String, password: String), Never>
+//  public let tfaChallenge: Signal<(email: String, password: String), Never>
 }
 
 
