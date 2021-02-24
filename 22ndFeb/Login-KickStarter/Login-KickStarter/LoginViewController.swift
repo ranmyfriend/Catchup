@@ -17,6 +17,13 @@ internal final class LoginViewController: UIViewController {
     @IBOutlet fileprivate var passwordTextField: UITextField!
     @IBOutlet fileprivate var rootStackView: UIStackView!
     @IBOutlet fileprivate var showHidePasswordButton: UIButton!
+    
+    internal let viewModel: LoginViewModelType = LoginViewModel()
+
+    internal static func instantiate() -> LoginViewController {
+      return Storyboard.Login.instantiate(LoginViewController.self)
+    }
+
 
 
     override func viewDidLoad() {

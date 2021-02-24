@@ -1,3 +1,4 @@
+/*
 import AVFoundation
 import CoreTelephony
 //import FBSDKCoreKit
@@ -165,3 +166,4 @@ public struct Environment {
     self.userDefaults = userDefaults
   }
 }
+*/
