@@ -113,6 +113,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y0n-ye-blG" secondAttribute="bottom" id="zAW-lr-9sS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="75s-9o-goo" id="5SE-q0-2h9"/>
+                        <outlet property="forgotPasswordButton" destination="Qqu-n0-UgN" id="Nba-d4-uzf"/>
+                        <outlet property="formBackgroundView" destination="m2p-X0-RUM" id="iCR-HN-mfc"/>
+                        <outlet property="formDividerView" destination="9xJ-bH-cJc" id="PAa-g8-b6j"/>
+                        <outlet property="loginButton" destination="51Y-pt-reg" id="HrW-o9-WUp"/>
+                        <outlet property="passwordTextField" destination="NTk-vH-ha4" id="Mah-BZ-amj"/>
+                        <outlet property="rootStackView" destination="Y0n-ye-blG" id="Q26-h4-zjr"/>
+                        <outlet property="showHidePasswordButton" destination="cQ2-ed-JGD" id="lKk-0x-y4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
