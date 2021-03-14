@@ -19,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let window = UIWindow(frame:  UIScreen.main.bounds)
-        window.rootViewController = LoginViewController.instantiate()
-        window.makeKeyAndVisible()
-        self.window = window
+//        let window = UIWindow(frame:  UIScreen.main.bounds)
+//        window.rootViewController = LoginViewController.instantiate()
+//        window.makeKeyAndVisible()
+//        self.window = window
 
     }
 

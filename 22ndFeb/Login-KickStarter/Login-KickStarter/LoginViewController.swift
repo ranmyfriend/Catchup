@@ -20,15 +20,73 @@ internal final class LoginViewController: UIViewController {
     
     internal let viewModel: LoginViewModelType = LoginViewModel()
 
-    internal static func instantiate() -> LoginViewController {
-      return Storyboard.Login.instantiate(LoginViewController.self)
-    }
+//    internal static func instantiate() -> LoginViewController {
+//      return Storyboard.Login.instantiate(LoginViewController.self)
+//    }
 
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
+
+        self.emailTextField.addTarget(
+          self,
+          action: #selector(self.emailTextFieldDoneEditing),
+          for: .editingDidEndOnExit
+        )
+
+        self.emailTextField.addTarget(
+          self,
+          action: #selector(self.emailTextFieldChanged(_:)),
+          for: [.editingDidEndOnExit, .editingChanged]
+        )
+
+        self.passwordTextField.addTarget(
+          self,
+          action: #selector(self.passwordTextFieldDoneEditing),
+          for: .editingDidEndOnExit
+        )
+
+        self.passwordTextField.addTarget(
+          self,
+          action: #selector(self.passwordTextFieldChanged(_:)),
+          for: .editingChanged
+        )
+
+        self.showHidePasswordButton.addTarget(
+          self,
+          action: #selector(self.showHidePasswordButtonTapped),
+          for: .touchUpInside
+        )
+
+        self.viewModel.inputs.viewDidLoad()
         
+    }
+    
+    @objc internal func emailTextFieldChanged(_ textField: UITextField) {
+      self.viewModel.inputs.emailChanged(textField.text)
+    }
+
+    @objc internal func emailTextFieldDoneEditing() {
+      self.viewModel.inputs.emailTextFieldDoneEditing()
+    }
+
+    @objc internal func passwordTextFieldChanged(_ textField: UITextField) {
+      self.viewModel.inputs.passwordChanged(textField.text)
+    }
+
+    @objc internal func passwordTextFieldDoneEditing() {
+      self.viewModel.inputs.passwordTextFieldDoneEditing()
+    }
+    
+    @objc func showHidePasswordButtonTapped() {
+      self.viewModel.inputs.showHidePasswordButtonTapped()
+    }
+    
+    @objc internal func dismissKeyboard() {
+      self.view.endEditing(true)
     }
 
 
