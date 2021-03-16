@@ -7,7 +7,6 @@
 
 import Foundation
 import ReactiveSwift
-//import 
 
 public protocol LoginViewModelInputs {
   /// String value of email textfield text
