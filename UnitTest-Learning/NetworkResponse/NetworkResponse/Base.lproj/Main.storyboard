@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkResponse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkResponse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yqR-he-QrI"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Search for Book"/>
                                 <connections>
                                     <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEh-ds-4WX"/>
                                 </connections>

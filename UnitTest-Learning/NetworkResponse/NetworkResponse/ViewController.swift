@@ -61,9 +61,14 @@ class ViewController: UIViewController {
     @IBOutlet private(set) var button: UIButton!
     private var dataTask: URLSessionDataTask?
     var session: URLSessionProtocol = URLSession.shared
+    
+    //lets move results into new variable and print it
+    var handleResults: ([SearchResult]) -> Void = {
+        print($0)
+    }
     private(set) var results: [SearchResult] = [] {
         didSet {
-            print(results)
+            handleResults(results)
         }
     }
     
@@ -100,13 +105,14 @@ class ViewController: UIViewController {
                     errorMessage = error.localizedDescription
                 }
             }
-            
             DispatchQueue.main.async { [weak self] in
                 
                 guard let self = self else { return }
+                
                 if let decoded = decoded {
                     self.results = decoded.results
                 }
+              
                 if let errorMessage = errorMessage {
                     self.showError(errorMessage)
                 }
