@@ -1,0 +1,6 @@
+#refer: https://medium.com/flawless-app-stories/swiftlint-in-use-279f44b3182e
+disabled_rules:
+    - trailing_whitespace
+excluded:
+    - Pods
+    - SpotifyTests
