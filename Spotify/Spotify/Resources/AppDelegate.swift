@@ -7,9 +7,18 @@
 
 import UIKit
 
+protocol AuthManagerProtocol {
+    
+    var isSignedIn: Bool { get }
+    
+}
+
+extension AuthManager: AuthManagerProtocol { }
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var authManager: AuthManager = AuthManager.shared
 
     func application(
         _ application: UIApplication,
@@ -23,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Getting the Window with Root view controller
     private func setupWindow() -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        if AuthManager.shared.isSignedIn {
+        if authManager.isSignedIn {
             window.rootViewController = TabBarViewController()
         } else {
             let welcomeViewController = WelcomeViewController()

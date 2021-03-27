@@ -7,11 +7,13 @@
 
 import UIKit
 
+@testable import Spotify
 
 @objc(TestAppDelegate)
 final class TestAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var authManager: AuthManagerProtocol = AuthManager.shared
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -24,7 +26,11 @@ final class TestAppDelegate: UIResponder, UIApplicationDelegate {
     /// Getting the Window with Root view controller
     private func setupWindow() -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = TestRootViewController()
+        if authManager.isSignedIn {
+            window.rootViewController = TestRootViewController()
+        } else {
+            window.rootViewController = TestWelcomeViewController()
+        }
         window.makeKeyAndVisible()
         return window
     }
