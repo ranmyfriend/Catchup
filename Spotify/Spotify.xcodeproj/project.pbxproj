@@ -155,6 +155,7 @@
 		6FB87CCC260DD31A0002FF87 = {
 			isa = PBXGroup;
 			children = (
+				6F32C341260E08500019AFF6 /* Readme.md */,
 				6FB87CD7260DD31A0002FF87 /* Spotify */,
 				6FB87CEE260DD31B0002FF87 /* SpotifyTests */,
 				6FB87CD6260DD31A0002FF87 /* Products */,
@@ -175,7 +176,6 @@
 		6FB87CD7260DD31A0002FF87 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				6F32C341260E08500019AFF6 /* Readme.md */,
 				6FB87D13260DD37D0002FF87 /* Resources */,
 				6FB87D12260DD36F0002FF87 /* Managers */,
 				6FB87D11260DD35F0002FF87 /* ViewModels */,
