@@ -41,6 +41,7 @@
 		6FB87D28260DD87C0002FF87 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB87D27260DD87C0002FF87 /* TestAppDelegate.swift */; };
 		6FB87D2C260DD8880002FF87 /* TestSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB87D2B260DD8880002FF87 /* TestSceneDelegate.swift */; };
 		6FB87D30260DD89E0002FF87 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB87D2F260DD89E0002FF87 /* main.swift */; };
+		6FC49E6B2612F6D400C1B09E /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49E6A2612F6D400C1B09E /* AuthResponse.swift */; };
 		F4ED79B68A246F21F1568CF7 /* Pods_SpotifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBEC57E181E4329FBB24D7F /* Pods_SpotifyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		6FB87D27260DD87C0002FF87 /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		6FB87D2B260DD8880002FF87 /* TestSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneDelegate.swift; sourceTree = "<group>"; };
 		6FB87D2F260DD89E0002FF87 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6FC49E6A2612F6D400C1B09E /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		BC6F63BF2ACEB7A17E12682F /* Pods-Spotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.debug.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC1E7DD0F0B0796EE4EC993 /* Pods-Spotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.release.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.release.xcconfig"; sourceTree = "<group>"; };
 		ECBEC57E181E4329FBB24D7F /* Pods_SpotifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +231,7 @@
 				6F90316C260DDE7100855B26 /* AudioTrack.swift */,
 				6F903170260DDE7900855B26 /* Artist.swift */,
 				6F903174260DDE8300855B26 /* UserProfile.swift */,
+				6FC49E6A2612F6D400C1B09E /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				6F903139260DDD9800855B26 /* LibraryViewController.swift in Sources */,
 				6FB87CD9260DD31A0002FF87 /* AppDelegate.swift in Sources */,
 				6F903171260DDE7900855B26 /* Artist.swift in Sources */,
+				6FC49E6B2612F6D400C1B09E /* AuthResponse.swift in Sources */,
 				6FB87CDB260DD31A0002FF87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +564,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -614,6 +619,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

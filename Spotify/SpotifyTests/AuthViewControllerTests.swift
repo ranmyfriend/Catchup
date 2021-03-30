@@ -2,14 +2,6 @@
 import XCTest
 import WebKit
 
-/* WorkAround of Loan */
-//home loan 6.8
-//7.10 - year - docs
-//60L
-
-//1 Crore 5 Laksh for 29years
-//70L for 5-10year 56L(fund) 9years - 69k - 20k - 6.8 rate of interest - 15days - 20days
-
 final class AuthViewControllerTests: XCTestCase {
     
     private var authViewController: AuthViewController!

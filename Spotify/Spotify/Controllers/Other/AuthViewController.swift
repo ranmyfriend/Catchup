@@ -10,8 +10,8 @@ import WebKit
 
 class AuthViewController: UIViewController {
     
-    //private
-     let webView: WKWebView = {
+    // make this webview as private one. changed it as internal due to the Unit Testing
+    let webView: WKWebView = {
         let prefs = WKWebpagePreferences()
         prefs.allowsContentJavaScript = true
         let config = WKWebViewConfiguration()
@@ -55,5 +55,13 @@ extension AuthViewController: WKNavigationDelegate {
             return
         }
         print("Code:\(code)")
+        
+        webView.isHidden = true
+        AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] (success) in
+            DispatchQueue.main.async {
+                self?.navigationController?.popToRootViewController(animated: true)
+                self?.authCompletionHandler?(success)
+            }
+        }
     }
 }

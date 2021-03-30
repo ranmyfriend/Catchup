@@ -42,7 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController = navigationController
         }
         window.makeKeyAndVisible()
+        
+//        AuthManager.shared.refreshIfNeeded { (success) in
+//            print(success)
+//        }
+        
         return window
+        
     }
 
     // MARK: UISceneSession Lifecycle

@@ -50,7 +50,6 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(">> \(#function) called")
         viewControllersSetup()
     }
     
@@ -64,7 +63,7 @@ class TabBarViewController: UITabBarController {
             animated: false
         )
         
-        print(">> \(#function) called")
+        print(">> \(String(describing: TabBarViewController.self)).\(#function) called")
     }
 
 }
