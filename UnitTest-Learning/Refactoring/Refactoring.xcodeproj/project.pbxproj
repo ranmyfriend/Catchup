@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4CEEC026173ED2000AD722 /* ChangePasswordViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CEEBF26173ED2000AD722 /* ChangePasswordViewControllerTests.swift */; };
 		6FC49E7D261339E100C1B09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49E7C261339E100C1B09E /* AppDelegate.swift */; };
 		6FC49E7F261339E100C1B09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49E7E261339E100C1B09E /* SceneDelegate.swift */; };
 		6FC49E81261339E100C1B09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49E80261339E100C1B09E /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		6FC49E9F261339E400C1B09E /* RefactoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49E9E261339E400C1B09E /* RefactoringUITests.swift */; };
 		6FC49EB3261341B300C1B09E /* PasswordChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49EB2261341B300C1B09E /* PasswordChanger.swift */; };
 		6FC49EB82613447B00C1B09E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC49EB72613447B00C1B09E /* ChangePasswordViewController.swift */; };
+		6FD45C9126148AF70056C2A7 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD45C9026148AF70056C2A7 /* TestHelpers.swift */; };
+		6FD45C9626148CC10056C2A7 /* MockPasswordChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD45C9526148CC10056C2A7 /* MockPasswordChanger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F4CEEBF26173ED2000AD722 /* ChangePasswordViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewControllerTests.swift; sourceTree = "<group>"; };
 		6FC49E79261339E100C1B09E /* Refactoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refactoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC49E7C261339E100C1B09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FC49E7E261339E100C1B09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		6FC49EA0261339E400C1B09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FC49EB2261341B300C1B09E /* PasswordChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChanger.swift; sourceTree = "<group>"; };
 		6FC49EB72613447B00C1B09E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		6FD45C9026148AF70056C2A7 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		6FD45C9526148CC10056C2A7 /* MockPasswordChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasswordChanger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				6FC49E95261339E400C1B09E /* Info.plist */,
+				6FD45C9026148AF70056C2A7 /* TestHelpers.swift */,
+				6FD45C9526148CC10056C2A7 /* MockPasswordChanger.swift */,
+				6F4CEEBF26173ED2000AD722 /* ChangePasswordViewControllerTests.swift */,
 			);
 			path = RefactoringTests;
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 					};
 					6FC49E8E261339E400C1B09E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 6FC49E78261339E100C1B09E;
 					};
 					6FC49E99261339E400C1B09E = {
@@ -273,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD45C9126148AF70056C2A7 /* TestHelpers.swift in Sources */,
+				6F4CEEC026173ED2000AD722 /* ChangePasswordViewControllerTests.swift in Sources */,
+				6FD45C9626148CC10056C2A7 /* MockPasswordChanger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +491,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35P9S7STBV;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;
@@ -489,6 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.RefactoringTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refactoring.app/Refactoring";
@@ -500,6 +515,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35P9S7STBV;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;

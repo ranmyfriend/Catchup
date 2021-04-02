@@ -7,7 +7,11 @@
 
 import Foundation
 
-final class PasswordChanger {
+protocol PasswordChanging {
+    func change(securityToken: String, oldPassword: String, newPassword: String, onSuccess: @escaping () -> Void, onFailure: @escaping (String) -> Void)
+}
+
+final class PasswordChanger: PasswordChanging {
     private static var pretendToSucceed = false
     private var successOrFailureTimer: SuccessOrFailureTimer?
     

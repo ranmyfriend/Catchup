@@ -9,16 +9,20 @@ import UIKit
 
 class ChangePasswordViewController: UIViewController {
     
+    @IBOutlet private(set) var navigationBar: UINavigationBar!
     @IBOutlet private(set) var cancelBarButton: UIBarButtonItem!
     @IBOutlet private(set) var oldPasswordTextField: UITextField!
     @IBOutlet private(set) var newPasswordTextField: UITextField!
     @IBOutlet private(set) var confirmPasswordTextField: UITextField!
     @IBOutlet private(set) var submitButton: UIButton!
     
-    private var passwordChanger = PasswordChanger()
+//    private var passwordChanger: PasswordChanging = PasswordChanger()
+    lazy var passwordChanger: PasswordChanging = PasswordChanger()
+    
     var securityToken = ""
     private let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     private let activityIndicator = UIActivityIndicatorView(style: .large)
+    let message = "Please enter a new password."
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,20 +44,12 @@ class ChangePasswordViewController: UIViewController {
     }
     
     @IBAction private func changePassword() {
-        if oldPasswordTextField.text?.isEmpty ?? true {
-            oldPasswordTextField.becomeFirstResponder()
+        guard validateInputs() else {
             return
         }
-        if newPasswordTextField.text?.isEmpty ?? true {
-            let alertController = UIAlertController(title: nil, message: "Please enter a new password", preferredStyle: .alert)
-            let okButton = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
-                self?.newPasswordTextField.becomeFirstResponder()
-            }
-            alertController.addAction(okButton)
-            alertController.preferredAction = okButton
-            self.present(alertController, animated: true)
-            return
-        }
+        
+//        setUpWaitingAppearance()
+//        attemptToChangePassword()
         
         if newPasswordTextField.text?.count ?? 0 < 6 {
             let alertController = UIAlertController(title: nil, message: "The new password should have at least 6 characters.", preferredStyle: .alert)
@@ -130,6 +126,20 @@ class ChangePasswordViewController: UIViewController {
             self?.present(alertController, animated: true)
         }
 
+    }
+    
+    private func validateInputs() -> Bool {
+        if newPasswordTextField.text?.isEmpty ?? true {
+            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+                self?.newPasswordTextField.becomeFirstResponder()
+            }
+            alertController.addAction(okButton)
+            alertController.preferredAction = okButton
+            self.present(alertController, animated: true)
+            return false
+        }
+        return true
     }
 
 }
