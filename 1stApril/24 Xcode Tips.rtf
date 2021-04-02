@@ -1,150 +1,345 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2578
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPS-BoldMT;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fmodern\fcharset0 CourierNewPS-BoldItalicMT;
-\f3\fmodern\fcharset0 CourierNewPS-ItalicMT;}
-{\colortbl;\red255\green255\blue255;\red5\green68\blue254;\red74\green0\blue230;\red0\green0\blue0;
-\red59\green0\blue164;}
-{\*\expandedcolortbl;;\cssrgb\c0\c38136\c99824;\cssrgb\c36820\c18688\c92265;\cssrgb\c0\c0\c0;
-\cssrgb\c30181\c13393\c70360;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww23360\viewh21300\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red7\green60\blue82;\red5\green61\blue204;
+\red0\green0\blue233;\red103\green29\blue2;\red5\green68\blue254;\red74\green0\blue230;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c30219\c39596;\cssrgb\c0\c33896\c83855;
+\cssrgb\c0\c0\c93333;\cssrgb\c48452\c16305\c0;\cssrgb\c0\c38136\c99824;\cssrgb\c36820\c18688\c92265;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww50700\viewh21300\viewkind0
+\deftab720
+\pard\pardeftab720\sa280\partightenfactor0
 
-\f0\b\fs96 \cf0 Author(Mr.Paul Hudson| Hacking with Swift) Youtube Video Link:\
+\f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Topic:
+\f1\b0  											
+\f0\b \cf3 24 Xcode Useful\'a0Tricks
+\f1\b0 \cf2 \
 
+\f0\b Author:
+\f1\b0  										
+\f0\b \cf3 Mr. Paul\'a0Hudson
+\f1\b0 \cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf2 Website:
+\f1\b0  										
+\f0\b \cf3 Hacking with Swift
+\f1\b0 \cf2 \
+
+\f0\b Youtube Video Link:						{\field{\*\fldinst{HYPERLINK "https://www.youtube.com/watch?v=8kiR_QsQNPc"}}{\fldrslt 
+\f1\b0 \cf4 \ul \ulc4 \strokec5 https://www.youtube.com/watch?v=8kiR_QsQNPc}}
+\f1\b0 \cf4 \ul \ulc4 \strokec5 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs56 \cf6 \ulnone Ranmyfriend.Medium Article:
+\fs48 \cf4  
+\f1\b0 \ul https://ranmyfriend.medium.com/24-xcode-useful-tricks-c47004675c8e\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b \cf2 \ulnone \strokec2 \
+
+\f0\i0 \cf7 1)Generating class initialisers
 \f1\b0 \
-\cf2 \ul \ulc2 https://www.youtube.com/watch?v=8kiR_QsQNPc\cf0 \ulnone \
-\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 We can create a Member-wise initialiser for class(is MoreUseful) Model or Struct Model using Refactor option.
+\f0\b \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf8 SELECT Class name -> REFACTOR -> GENERATE MEMBER-WISE INITIALISER\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\i\b 1)Generating class initialisers
-\f1\i0\b0 \
-				We can create Member-wise initialiser for class(is MoreUseful) Model or Struct Model using Refactor option. \
-\
-	
-\f0\b \cf3 SELECT Class name -> REFACTOR -> GENERATE MEMBER-WISE INITIALISER
-\f1\b0 \cf0 \
-\
+\f1\b0 \cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\i\b 2)Environment overrides\
+\f0\b \cf7 2)Environment overrides
+\f1\b0 \cf2 \
+Where we used to see the View Debugging Hierarchy, besides we can figure out this option. So, with help of this, we can live rendering out the bigger font text and dark mode and light mode and grayscale and different testing possibility related to the environment. We can easily debug and see the live output.\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\i0\b0 		Where we used to see the View Debugging Hierarchy, beside we can figure out this option. So, with help of this we can live rendering out the bigger font text and dark mode and light mode and grayscale and different testing possibility related to environment. We can easily debug and see the live output.\
-\
-	
-\f0\b \cf3 RUN the App -> BOTTOM of the Xcode -> YOU will find Environment override option
-\f1\b0 \cf0 \
-\
+\f0\b \cf8 RUN the App -> BOTTOM of the Xcode -> YOU will find the Environment override option
+\f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\i\b 3)Selecting blocks of code\
-\
+\f2\i\b \cf2 \
 
-\f1\i0\b0 This is simply selecting a starting brace and Xcode will select and tells us where it ends.\
-\
-	
-\f0\b \cf3 Select Starting brace of any function and DOUBLE tap it.\cf0 \
-\
+\f0\i0 \cf7 3)Selecting blocks of code\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\i 4)Checking your spelling\
-\
+\f1\b0 \cf2 This is simply selecting a starting brace and Xcode will select and tells us where it ends.\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\i0\b0 Xcode is very smart at checking your spelling is correct. It clears typo errors on your double quotes. Like \'93Hello Wrold\'94.Here world spelling wrong. You can correct it by simply following steps\
-\
-	
-\f0\b \cf3 SELECT Edit menu -> Format -> Spelling and Grammar -> Check Spelling While Typing
-\f1\b0 \cf0 \
-\
-It can clearly highlight the word error on red colour underline. And you can simply right click and correct it or visualise the entire screen what and also the typos are presented.\
+\f0\b \cf8 Select Starting brace of any function and DOUBLE tap it.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 4)Checking your spelling\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Xcode is very smart at checking your spelling is correct. It clears typo errors on your double-quotes. Like \'93Hello Wrold\'94.Here world spelling wrong. You can correct it by simply following the steps\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 SELECT Edit menu -> Format -> Spelling and Grammar -> Check Spelling While Typing\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\cf2 It can highlight the word error on the red colour underline. And you can simply right click and correct it or visualise the entire screen what and also the typos are presented.\
 NOTE: Even it gives you an error when you are following camelCase properly also.\
 Like: firstname => it should be firstName. Then you will easily catch an error.\
+\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\i\b \
-5)Fixing all issues\
+\f0\b \cf7 5)Fixing all issues\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f3\b0 \
+\f1\b0 \cf2 You may find this protocol does not confirm all the functions or variables. By the time, Xcode will give a dotted red colour button. Where you tap on it, It will add needed functions or vars to the class. But what likewise if you are getting more errors. How to fix instantly all those.\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\i0 You may find this protocol does not confirm all the functions or variables. By the time, Xcode will give dotted red colour button. Where you tap on it, It will add needed functions or vars to the class. But what likewise if you are getting more errors. How to fix instantly all those.
-\f3\i \
-\
-	
-\f2\b \cf3 Editor -> Fix all issues. Boom. It will fix the entire errors on adding the missing functions and vars.\cf2 \
-\
-\cf4 6)Deleting Search Results
-\f3\b0 \cf0 \
+\f0\b \cf8 Editor -> Fix all issues. Boom. It will fix the entire errors on adding the missing functions and vars.\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f2\b \
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\i0\b0 Usually when we go for searching any file or text. It will list down the matches files. What if you are interested in them all. Just interested to some files. You can easily ignore the files which you don\'92t want tapping on backspace or delete option\
-\
-	
-\f0\b \cf5 SEARCH any text on Xcode -> Select any of search result -> press backspace or delete option.
-\f1\b0 \cf0  \
-\
-It will be removed from search results.\
-\
+\f0\b \cf7 6)Deleting Search Results\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f0\b 7)Resuming the SwiftUI Canvas\
-\
+\f1\b0 \cf2 Usually when we go searching any file or text. It will list down the matches files. What if you are interested in them all. Just interested in some files. You can easily ignore the files which you don\'92t want tapping on backspace or delete option\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0 Sometimes the canvas will get stuck when you make some changes in your code. By the time you will be able to see RESUME button on right side of screen. But easily you can do with help of shortcuts.
-\f0\b  \
-\
-Option + Command + P -> Resume SwiftUI Canvas \
-Option + Command + return -> Hide SwiftUI Canvas\
-\
-8)Tiling the Simulator\
-\
-
-\f1\b0 This is like people who wants to view the simulator and Xcode in one screen. So easily can do multitasking. \
-\
-Two ways you can achieve this, by doing full screening the Xcode and drag the Simulator merge into your full screen Xcode. So, automatically this can happen. Otherwise, \
-\
-
-\f0\b 	SELECT simulator -> Window -> Tile window to Right/Left of Screen
+\f0\b \cf8 SEARCH any text on Xcode -> Select any of search result -> press backspace or delete option.
 \f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 It will be removed from search results.\
 \
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f0\b 9)	Expanding autocomplete\
+\f0\b \cf7 7)Resuming the SwiftUI Canvas\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0 \
-Xcode automatically gives you autocomplete on typing any code you like. But sometime it will be lengthier one as well. And in the tail of function you will see dot dot. So, here is the tip you can resize the autocompletion window by over drag it.\
-\
+\f1\b0 \cf2 Sometimes the canvas will get stuck when you make some changes in your code. By the time you will be able to see the RESUME button on the right side of the screen. But easily you can do it with help of shortcuts.\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f0\b 10)Quickly toggling breakpoints\
-\
-
-\f1\b0 Enable and delete breakpoints is heavier work when you do with your mouse or trackpad. But using shortcut it much simpler.
-\f0\b \
-\
-	COMMAND + BACKSLASH \{Toggle function to enable and disable\}
+\f0\b \cf8 Option + Command + P -> Resume SwiftUI Canvas
 \f1\b0 \
 
-\f2\i\b \
+\f0\b Option + Command + return -> Hide SwiftUI Canvas\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f0\i0 11)Randomising test order\
-\
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0 Usually we use to write a test function in ordered way. Because mostly the second test function may required to run the first function. But what if I want to run these in random order. Here is the tip:\
-\
+\f0\b \cf7 8)Tiling the Simulator\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f0\b PRODUCT -> Test -> Info -> Options -> (check)Randomise execution order
-\f1\b0  \
-\
-This will run the test cases in random order. So it will give more confident on not depending with any order or function.
-\f0\b \
-\
-12)Filtering the jump bar\
-\
+\f1\b0 \cf2 This is like people who want to view the simulator and Xcode on one screen. So easily can do multitasking.\
+Two ways you can achieve this, by doing a full screening of the Xcode and drag the Simulator merge into your full-screen Xcode. So, automatically this can happen. Otherwise,\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0 Usually we use see the list of functions on vars when clicking method list. But if you have big list, you cannot simply scroll and see. In Xcode wherever you see the list, the hidden feature is SEARCH BAR is there. You start simply typing it and it immediately giving you the result.
-\f0\b \
-\
-For ex: Xcode Target and Schemes\
-\
-13)Generating an Interface file\
-\
+\f0\b \cf8 SELECT simulator -> Window -> Tile window to Right/Left of Screen\
+\pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0 When you want to see the Class file interface what and a major functionalities are written. Unless otherwise you have go through the entire class then only you will come to know. How to see protocol kind of methods in a class. Xcode will help you easily using the shortcut.
-\f0\b \
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 9)Expanding autocomplete\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Xcode automatically gives you autocomplete on typing any code you like. But sometimes it will be a lengthier one as well. And in the tail of the function, you will see dot dot. So, here is the tip you can resize the autocompletion window by over drag it.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 10)Quickly toggling breakpoints\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Enable and delete breakpoints is heavier work when you do with your mouse or trackpad. But using shortcut is much simpler.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 COMMAND + BACKSLASH \{Toggle function to enable and disable\}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 11)Randomising test order\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Usually, we use to write a test function in an ordered way. Because mostly the second test function may be required to run the first function. But what if I want to run these in random order. Here is the tip:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 PRODUCT -> Test -> Info -> Options -> (check)Randomise execution order
+\f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 This will run the test cases in random order. So it will give more confidence on not depending on any order or function.\
 \
-CONTROL + Command + UpArrow - To See Interface File\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 12)Filtering the jump bar\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Usually, we use to see the list of functions on vars when clicking the method list. But if you have a big list, you cannot simply scroll and see. In Xcode wherever you see the list, the hidden feature is SEARCH BAR is there. You start simply typing it and it immediately giving you the result.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 For example Xcode Target and Schemes\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 13)Generating an Interface file\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 When you want to see the Class file interface what and major functionalities are written. Unless otherwise, you have to go through the entire class then only you will come to know. How to see protocol kind of methods in a class. Xcode will help you easily using the shortcut.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 CONTROL + Command + UpArrow
+\f3 \uc0\u8202 
+\f0 \'97
+\f3 \uc0\u8202 
+\f0 To See Interface File
+\f1\b0 \
+
+\f0\b CONTROL + Command + DownArrow
+\f3 \uc0\u8202 
+\f0 \'97
+\f3 \uc0\u8202 
+\f0 To See Interface and Implementation both.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 14)Adding comments quickly\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 What if you want to add documentation quickly to your function. Here is the tip:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 OPTION + Command + FrontSlash(/)
+\f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 This will add function description along with parameters\
 \
-CONTROL + Command + DownArrow - To See Interface and Implementation both.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 15)Finding files faster\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 There are two ways you can find a file from your project particular group or all over the project files.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 From a particular filegroup, you can RIGHT click the group and sort by name.
+\f1\b0 \
+
+\f0\b From Project files at the bottom of the search bar start typing the name of the file. You will find it easily.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 16)Seeing source changes inline\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Xcode beautifully handles the source code changes inside the editor.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 PREFERENCES -> Source Control Tab -> Check Show Source Control changes.\'a0
+\f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 Once it is checked, then you simply make the changes you will be able to see BLUE BAR where you see the breakPoint of the code line. Even you can click on the BLUE BAR, and see the change of the code. If you want you can withdraw it.\
 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 17)Finding code in the minimap\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Usually, this minimap helps to easily jump into a particular portion on a longer swift file. Even you can mouseover in the minimap you will get to know the method name.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 EDITOR -> Minimap
+\f1\b0 \
+
+\f0\b \cf2 Even you can click the COMMAND key to list down all the method names in a list\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 18)Re-Run your last test\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 What if you want to run your last test. Particularly run the last one. Sometimes you just want to tweak something to see the last one. Here is the command tip:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 CONTROL + OPTION + COMMAND + G\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 19)Remapping unhelpful keys\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Unnecessary shortcuts may collide with the handy shortcuts. Like, when you press COMMAND + SHIFT + O -> this will open the file quickly. But you may press COMMAND + SHIFT + P also, you can avoid print and page setup shortcuts from keybindings.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 PREFERENCES -> KEY BINDINGS -> Page setup
+\f1\b0 \
+
+\f0\b \cf2 Search and delete the shortcut.
+\f1\b0 \
+
+\f0\b Even refreshing the SwiftUI canvas you may use COMMAND + P. Quickly you can do your job with help of changing the shortcuts.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 20)Upgrading your searches\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 You can search a word using Find, Text, Containing but when you tap on the Search icon(Magnifying icon) you will be able to get search history and a lot.\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 21)Reindenting code\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Copying and pasting code looks vague. Here is a tip:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf8 Select the code -> CONTROL + I\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf8 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 22)Testing in-app purchases\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 You can test in-app purchase inside your Xcode project.
+\f1\b0 \
+
+\f0\b \cf8 COMMAND + N -> Search Storekit configuration file -> Save
+\f1\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 Then select based on the scheme of your in-app purchase and click Product menu -> RUN -> Options Tab -> StoreKit Configuration -> set new store kit configuration file. BOOM That\'92s it.\
+Rather than going to AppStore in-App purchase, you can easily test out with this setup.\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 23)Exploring build options\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 Enable BitCode. What does it do? Select Enable Bitcode option and 
+\f0\b \cf8 OPTION + DOUBLE CLICK
+\f1\b0 \cf2 . You will get a summary window of What is the advantage of enabling the bitcode.\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf7 24)Pinning previews\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf2 When you want to change cell text view font and want to see the whole table view reflection of this change. 
+\f0\b \cf8 You can easily pin the parent view using the bottom of the CANVAS\cf2 .
+\f1\b0 \
+\uc0\u8232 \
 }
