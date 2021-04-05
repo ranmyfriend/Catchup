@@ -27,7 +27,7 @@ final class TestAppDelegate: UIResponder, UIApplicationDelegate {
     private func setupWindow() -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
         if authManager.isSignedIn {
-            window.rootViewController = TestRootViewController()
+            window.rootViewController = TestTabBarViewController()
         } else {
             window.rootViewController = TestWelcomeViewController()
         }

@@ -21,7 +21,7 @@ class TestSceneDelegate: UIResponder, UIWindowSceneDelegate {
     /// Getting the Window with Root view controller
     private func setupWindow(using windowScene: UIWindowScene) -> UIWindow {
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = TestRootViewController()
+        window.rootViewController = TestTabBarViewController()
         window.makeKeyAndVisible()
         return window
     }
