@@ -1,6 +1,8 @@
 @testable import TDD
 import XCTest
 
+//RED - GREEN - REFACTOR
+
 final class GreeterWithoutNameTests: XCTestCase {
 
     private var sut: Greeter!
@@ -41,9 +43,12 @@ final class GreeterWithoutNameTests: XCTestCase {
         let result = sut.greet(time: date(hour: 15, minute: 33))
         XCTAssertEqual(result, "Good afternoon.")
     }
-    
-    private func date(hour: Int, minute: Int) -> Date {
-        let components = DateComponents(calendar: Calendar.current, hour: hour, minute: minute)
-        return components.date!
-    }
+  
+}
+
+
+
+ func date(hour: Int, minute: Int) -> Date {
+    let components = DateComponents(calendar: Calendar.current, hour: hour, minute: minute)
+    return components.date!
 }
