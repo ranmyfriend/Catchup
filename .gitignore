@@ -1,1 +1,4 @@
 .DS_Store
+Spotify/Pods
+Spotify/Podfile.lock
+Spotify/Spotify.xcworkspace/xcuserdata

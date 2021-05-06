@@ -7,6 +7,9 @@ target 'Spotify' do
 
   # Pods for Spotify
     pod 'SwiftLint'
+    pod 'SDWebImage'
+    pod 'Appirater'
+    pod 'Firebase/Analytics'
 
   target 'SpotifyTests' do
     inherit! :search_paths

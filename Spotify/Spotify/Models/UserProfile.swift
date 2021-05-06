@@ -11,10 +11,10 @@ struct UserProfile: Codable {
     let country: String
     let displayName: String
     let email: String
-    let explicitContent: [String: Int]
-    let externalUrls: [String: String]
+    let explicitContent: [String: Bool]
+//    let externalUrls: [String: String]
 //    let followers:  [String: Codable?]
-    let href: String
+//    let href: String
     let id: String
     let images: [UserImage]
     let product: String
@@ -27,8 +27,8 @@ extension UserProfile {
         case displayName = "display_name"
         case email
         case explicitContent = "explicit_content"
-        case externalUrls = "external_urls"
-        case href
+//        case externalUrls = "external_urls"
+//        case href
         case id
         case images
         case product
@@ -36,9 +36,9 @@ extension UserProfile {
 }
 
 struct UserImage: Codable {
-    let height: String
+//    let height: String
     let url: String
-    let width: String
+//    let width: String
 }
 
 /*
