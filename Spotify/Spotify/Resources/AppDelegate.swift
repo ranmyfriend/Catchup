@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupWindow() -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
         if authManager.isSignedIn {
+          AuthManager.shared.refreshIfNeeded(completion: nil)
             window.rootViewController = TabBarViewController()
         } else {
             let welcomeViewController = WelcomeViewController()
@@ -43,12 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         window.makeKeyAndVisible()
         
-//        AuthManager.shared.refreshIfNeeded { (success) in
-//            print(success)
-//        }
-        
-        return window
-        
+      return window
     }
 
     // MARK: UISceneSession Lifecycle

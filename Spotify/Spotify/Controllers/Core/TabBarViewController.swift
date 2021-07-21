@@ -15,6 +15,7 @@ class TabBarViewController: UITabBarController {
         homeViewController.navigationItem.largeTitleDisplayMode = .always
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         homeNavigationController.navigationBar.prefersLargeTitles = true
+        homeNavigationController.navigationBar.tintColor = .label
         homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
         return homeNavigationController
     }
@@ -25,6 +26,7 @@ class TabBarViewController: UITabBarController {
         searchViewController.navigationItem.largeTitleDisplayMode = .always
         let searchNavigationController = UINavigationController(rootViewController: searchViewController)
         searchNavigationController.navigationBar.prefersLargeTitles = true
+        searchNavigationController.navigationBar.tintColor = .label
         searchNavigationController.tabBarItem = UITabBarItem(
             title: "Search",
             image: UIImage(systemName: "magnifyingglass"),
@@ -39,6 +41,7 @@ class TabBarViewController: UITabBarController {
         libraryViewController.navigationItem.largeTitleDisplayMode = .always
         let libraryNavigationController = UINavigationController(rootViewController: libraryViewController)
         libraryNavigationController.navigationBar.prefersLargeTitles = true
+        libraryNavigationController.navigationBar.tintColor = .label
         libraryNavigationController.tabBarItem = UITabBarItem(
             title: "Library",
             image: UIImage(systemName: "music.note.list"),
