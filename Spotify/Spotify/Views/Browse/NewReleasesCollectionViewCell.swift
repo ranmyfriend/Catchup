@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 
 class NewReleasesCollectionViewCell: UICollectionViewCell {
-    static let identifier = "NewReleasesCollectionViewCell"
+  static let identifier = "NewReleasesCollectionViewCell"
   
   private let albumCoverImageView: UIImageView = {
     let imageView = UIImageView()
@@ -32,14 +32,12 @@ class NewReleasesCollectionViewCell: UICollectionViewCell {
     return label
   }()
   
-  
   private let artistNameLabel: UILabel = {
     let label = UILabel()
     label.font = .systemFont(ofSize: 18, weight: .light)
     label.numberOfLines = 0
     return label
   }()
-
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -64,11 +62,11 @@ class NewReleasesCollectionViewCell: UICollectionViewCell {
     noOfTracksLabel.sizeToFit()
     
     albumCoverImageView.frame = CGRect(x: 5, y: 5, width: imageSize, height: imageSize)
-        
+    
     albumNameLabel.frame = CGRect(x: albumCoverImageView.right+10, y: 5, width: albumLabelSize.width, height: min(70, albumLabelSize.height))
-
+    
     artistNameLabel.frame = CGRect(x: albumCoverImageView.right+10, y: albumNameLabel.bottom, width: contentView.width-albumCoverImageView.right-10, height: 30)
-
+    
     noOfTracksLabel.frame = CGRect(x: albumCoverImageView.right+10, y: contentView.bottom-44, width: noOfTracksLabel.width, height: 44)
   }
   
