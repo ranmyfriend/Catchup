@@ -12,6 +12,7 @@
 		6F24610F26AA8F26000C763F /* RecommendedTrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F24610E26AA8F26000C763F /* RecommendedTrackCellViewModel.swift */; };
 		6F32C342260E08500019AFF6 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F32C341260E08500019AFF6 /* Readme.md */; };
 		6F32C348260E2BB60019AFF6 /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32C347260E2BB60019AFF6 /* TabBarViewControllerTests.swift */; };
+		6F63A16726B28514000DEB18 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63A16626B28514000DEB18 /* GenreCollectionViewCell.swift */; };
 		6F7DB8DD2612035E00B9C8E2 /* AuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DB8DC2612035E00B9C8E2 /* AuthViewControllerTests.swift */; };
 		6F809EBD260EFBBD0094D79D /* AuthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809EBC260EFBBD0094D79D /* AuthManagerTests.swift */; };
 		6F809EC6260EFDC30094D79D /* TestWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809EC5260EFDC30094D79D /* TestWelcomeViewController.swift */; };
@@ -81,6 +82,7 @@
 		6F24610E26AA8F26000C763F /* RecommendedTrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackCellViewModel.swift; sourceTree = "<group>"; };
 		6F32C341260E08500019AFF6 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		6F32C347260E2BB60019AFF6 /* TabBarViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerTests.swift; sourceTree = "<group>"; };
+		6F63A16626B28514000DEB18 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F7DB8DC2612035E00B9C8E2 /* AuthViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerTests.swift; sourceTree = "<group>"; };
 		6F809EBC260EFBBD0094D79D /* AuthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerTests.swift; sourceTree = "<group>"; };
 		6F809EC5260EFDC30094D79D /* TestWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWelcomeViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				6FB87CE3260DD31B0002FF87 /* LaunchScreen.storyboard */,
 				6F93C14526AC5AAE00BFC2F1 /* PlaylistHeaderCollectionReusableView.swift */,
 				6F9786A026AEFC6A00DA744E /* TitleHeaderCollectionReusableView.swift */,
+				6F63A16626B28514000DEB18 /* GenreCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				6F903161260DDE4000855B26 /* APICaller.swift in Sources */,
 				6F903165260DDE4700855B26 /* HapticsManager.swift in Sources */,
 				6FB87D30260DD89E0002FF87 /* main.swift in Sources */,
+				6F63A16726B28514000DEB18 /* GenreCollectionViewCell.swift in Sources */,
 				6F903151260DDDEF00855B26 /* PlayerViewController.swift in Sources */,
 				6F93C14626AC5AAE00BFC2F1 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
 				6F93C14226ABF59A00BFC2F1 /* AlbumDetailsResponse.swift in Sources */,
