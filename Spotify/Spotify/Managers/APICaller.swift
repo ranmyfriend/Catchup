@@ -20,7 +20,7 @@ final class APICaller {
         case failedToGetData
     }
   
-  //MARK: - Albums
+  //MARK: - Album Details
   public func getAlbumDetails(for album: Album, completion: @escaping (Result<AlbumDetailsResponse, Error>) -> Void) {
     createRequest(with: URL(string: Constants.baseAPIURL + "/albums/" + album.id), type: .GET) { request in
       let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
@@ -40,7 +40,7 @@ final class APICaller {
     }
   }
   
-  //MARK: - Playlists
+  //MARK: - Playlist Details
   
   public func getPlaylistDetails(for playlist: Playlist, completion: @escaping (Result<PlaylistDetailsResponse, Error>) -> Void) {
     createRequest(with: URL(string: Constants.baseAPIURL + "/playlists/" + playlist.id), type: .GET) { request in
@@ -83,7 +83,7 @@ final class APICaller {
         }
     }
     
-  //MARK: - NewReleases
+  //MARK: - New Releases
   
   public func getNewReleases(completion: @escaping ((Result<NewReleasesResponse, Error>)) -> Void) {
     createRequest(with: URL(string: Constants.baseAPIURL + "/browse/new-releases?limit=50"), type: .GET) { request in
@@ -104,7 +104,7 @@ final class APICaller {
     }
   }
   
-  //MARK: - Playlist
+  //MARK: - Featured Playlist
   
   public func getFeaturedPlaylists(completion: @escaping ((Result<FeaturedPlaylistsResponse, Error>)) -> Void) {
     createRequest(with: URL(string: Constants.baseAPIURL + "/browse/featured-playlists?limit=20"), type: .GET) { request in
@@ -125,7 +125,8 @@ final class APICaller {
     }
   }
   
-  
+  // MARK: - Recommendations
+
   public func getRecommendations(genres: Set<String>, completion: @escaping ((Result<RecommendationsResponse, Error>)) -> Void) {
     let seeds = genres.joined(separator: ",")
     createRequest(with: URL(string: Constants.baseAPIURL + "/recommendations?limit=40&seed_genres=\(seeds)"), type: .GET) { request in
@@ -146,6 +147,8 @@ final class APICaller {
     }
   }
   
+  // MARK: - Recommended Genres
+
   public func getRecommendedGenres(completion: @escaping ((Result<RecommededGenresResponse, Error>)) -> Void) {
     createRequest(with: URL(string: Constants.baseAPIURL + "/recommendations/available-genre-seeds"), type: .GET) { request in
       let task = URLSession.shared.dataTask(with: request) { data, _, error in
@@ -157,6 +160,52 @@ final class APICaller {
         do {
           let result = try JSONDecoder().decode(RecommededGenresResponse.self, from: data)
           completion(.success(result))
+        } catch {
+          completion(.failure(error))
+        }
+      }
+      task.resume()
+    }
+  }
+  
+  // MARK: - Category
+  
+  public func getCategories(completion: @escaping ((Result<[Category], Error>)) -> Void) {
+    createRequest(with: URL(string: Constants.baseAPIURL + "/browse/categories?limit=50"),
+                  type: .GET
+    ) { request in
+      let task = URLSession.shared.dataTask(with: request) { data, _, error in
+        guard let data = data, error == nil else {
+          completion(.failure(APIError.failedToGetData))
+          return
+        }
+        
+        do {
+          let result = try JSONDecoder().decode(AllCategoriesResponse.self, from: data)
+          completion(.success(result.categories.items))
+        } catch {
+          completion(.failure(error))
+        }
+      }
+      task.resume()
+    }
+  }
+  
+  // MARK: - Category PlayList
+
+  public func getCategoryPlaylist(category: Category, completion: @escaping ((Result<[Playlist], Error>)) -> Void) {
+    createRequest(with: URL(string: Constants.baseAPIURL + "/browse/categories/\(category.id)/playlists?limit=50"),
+                  type: .GET
+    ) { request in
+      let task = URLSession.shared.dataTask(with: request) { data, _, error in
+        guard let data = data, error == nil else {
+          completion(.failure(APIError.failedToGetData))
+          return
+        }
+        
+        do {
+            let result = try JSONDecoder().decode(CategoryPlaylistsResponse.self, from: data)
+          completion(.success(result.playlists.items))
         } catch {
           completion(.failure(error))
         }
