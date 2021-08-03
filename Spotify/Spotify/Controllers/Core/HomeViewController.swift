@@ -228,8 +228,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
       playlistViewController.title = playlist.name
       playlistViewController.navigationItem.largeTitleDisplayMode = .never
       navigationController?.pushViewController(playlistViewController, animated: true)
-    case .recommendedTracks: break
-    
+    case .recommendedTracks:
+      let track = tracks[indexPath.row]
+      PlaybackPresenter.startPlayback(from: self, track: track)
     }
   }
   

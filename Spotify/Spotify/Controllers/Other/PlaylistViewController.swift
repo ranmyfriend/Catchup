@@ -11,6 +11,7 @@ class PlaylistViewController: UIViewController {
 
   private let playlist: Playlist
   private var viewModels = [RecommendedTrackCellViewModel]()
+  private var tracks = [AudioTrack]()
   
   private let collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewCompositionalLayout(sectionProvider: { _, _ in
     
@@ -62,6 +63,7 @@ class PlaylistViewController: UIViewController {
       DispatchQueue.main.async {
         switch result {
         case .success(let value):
+          self?.tracks = value.tracks.items.compactMap({$0.track})
           self?.viewModels = value.tracks.items.compactMap({RecommendedTrackCellViewModel(name: $0.track.name, artistName: $0.track.artists.first?.name ?? "", artworkURL: URL(string: $0.track.album?.images.first?.url ?? ""))})
           self?.collectionView.reloadData()
         case .failure(let error):
@@ -115,15 +117,14 @@ extension PlaylistViewController: UICollectionViewDelegate, UICollectionViewData
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     collectionView.deselectItem(at: indexPath, animated: true)
-    //play song
+    PlaybackPresenter.startPlayback(from: self, track: self.tracks[indexPath.row])
   }
-  
-  
+ 
 }
 
 
 extension PlaylistViewController: PlaylistHeaderCollectionReusableViewDelegate {
   func playlistHeaderCollectionReusableViewDidTapPlayAll(_ header: PlaylistHeaderCollectionReusableView) {
-      print("play all")
+    PlaybackPresenter.startPlayback(from: self, tracks: tracks)
   }
 }
