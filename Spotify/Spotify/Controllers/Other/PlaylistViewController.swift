@@ -117,7 +117,7 @@ extension PlaylistViewController: UICollectionViewDelegate, UICollectionViewData
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     collectionView.deselectItem(at: indexPath, animated: true)
-    PlaybackPresenter.startPlayback(from: self, track: self.tracks[indexPath.row])
+    PlaybackPresenter.shared.startPlayback(from: self, track: self.tracks[indexPath.row])
   }
  
 }
@@ -125,6 +125,6 @@ extension PlaylistViewController: UICollectionViewDelegate, UICollectionViewData
 
 extension PlaylistViewController: PlaylistHeaderCollectionReusableViewDelegate {
   func playlistHeaderCollectionReusableViewDidTapPlayAll(_ header: PlaylistHeaderCollectionReusableView) {
-    PlaybackPresenter.startPlayback(from: self, tracks: tracks)
+    PlaybackPresenter.shared.startPlayback(from: self, tracks: tracks)
   }
 }
