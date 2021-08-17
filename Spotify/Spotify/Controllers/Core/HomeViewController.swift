@@ -54,6 +54,7 @@ class HomeViewController: UIViewController {
     view.addSubview(spinner)
     
     fetchData()
+    addLongTapGesture()
   }
   
   private func configureCollectionView() {
@@ -71,6 +72,44 @@ class HomeViewController: UIViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     collectionView.frame = view.bounds
+  }
+  
+  private func addLongTapGesture() {
+    let gesture = UILongPressGestureRecognizer(target: self, action: #selector(didTapLongPress(_:)))
+    collectionView.addGestureRecognizer(gesture)
+  }
+  
+  @objc func didTapLongPress(_ gesture: UILongPressGestureRecognizer) {
+    guard gesture.state == .began else {
+      return
+    }
+    
+    let touchPoint = gesture.location(in: collectionView)
+    guard let indexPath = collectionView.indexPathForItem(at: touchPoint), indexPath.section == 2 else {
+      return
+    }
+    
+    let model = tracks[indexPath.row]
+    let actionSheet = UIAlertController(title: model.name, message: "What you like to add this to a playlist?", preferredStyle: .actionSheet)
+    actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    actionSheet.addAction(UIAlertAction(title: "Add to Playlist", style: .default, handler: {_ in
+      DispatchQueue.main.async { [weak self] in
+        let libraryPlaylistViewController = LibraryPlaylistsViewController()
+        libraryPlaylistViewController.selectionHandler = {playlist in
+          APICaller.shared.addTrackToPlaylist(track: model, playlist: playlist) { success in
+            if success {
+              print("Added to playlist")
+            } else {
+              print("Failed to add playlist")
+            }
+          }
+        }
+        libraryPlaylistViewController.title = "Select Playlist"
+        self?.present(UINavigationController(rootViewController: libraryPlaylistViewController), animated: true, completion: nil)
+      }
+    }))
+    present(actionSheet, animated: true)
+    
   }
   
   private func fetchData() {
@@ -136,7 +175,7 @@ class HomeViewController: UIViewController {
       guard let newAlbums = newReleases?.albums.items,
             let playlists = featuredPlaylists?.playlists.items,
             let tracks = recommedations?.tracks else {
-        return
+        fatalError("Models are nil")
       }
       self.configureModels(newAlbums: newAlbums, playlists: playlists, tracks: tracks)
     }
