@@ -157,21 +157,39 @@ final class APICaller {
     }
   }
   
-  public func removeTrackFromPlaylist(track: AudioTrack, playlist: Playlist, completion: @escaping (Result<PlaylistDetailsResponse, Error>) -> Void) {
-    createRequest(with: URL(string: Constants.baseAPIURL + "/playlists/" + playlist.id), type: .GET) { request in
+  public func removeTrackFromPlaylist(track: AudioTrack, playlist: Playlist, completion: @escaping (Bool) -> Void) {
+    createRequest(with: URL(string: Constants.baseAPIURL + "/playlists/\(playlist.id)/tracks"), type: .DELETE) { baseRequest in
+      var request = baseRequest
+      let json: [String: Any] = [
+        "tracks":
+          [
+            [ "uri" :  "spotify:track:\(track.id)"
+            ]
+          ]
+      ]
+      request.httpBody = try? JSONSerialization.data(withJSONObject: json, options: .fragmentsAllowed)
+      request.setValue("application/json", forHTTPHeaderField: "Content-Type")
       let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
           guard let data = data, error == nil else {
-              completion(.failure(APIError.failedToGetData))
+              completion(false)
               return
           }
-          
-          do {
-              let result = try JSONDecoder().decode(PlaylistDetailsResponse.self, from: data)
-              completion(.success(result))
-          } catch {
-            print(error)
-              completion(.failure(error))
+        
+        do {
+          let result = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+          if let respone = result as? [String: Any],
+             respone["snapshot_id"] as? String != nil {
+            completion(true)
+          } else {
+            print(result)
+            completion(false)
           }
+          print(result)
+        } catch {
+          print(error)
+            completion(false)
+        }
+        
       }
       task.resume()
     }
@@ -363,6 +381,7 @@ final class APICaller {
     enum HTTPMethod: String {
         case GET
         case POST
+        case DELETE
     }
     private func createRequest(with url: URL?, type: HTTPMethod, completion: @escaping (URLRequest) -> Void) {
         AuthManager.shared.withValidToken { (token) in
