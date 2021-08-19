@@ -26,7 +26,8 @@ final class AuthManager {
                                 %20user-follow-read\
                                 %20user-follow-modify\
                                 %20user-library-read\
-                                %20user-read-email
+                                %20user-read-email\
+                                %20user-library-modify
                                 """
     }
     

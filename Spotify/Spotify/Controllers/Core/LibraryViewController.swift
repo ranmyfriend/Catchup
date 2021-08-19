@@ -10,7 +10,7 @@ import UIKit
 class LibraryViewController: UIViewController {
   
   private let playlistViewController = LibraryPlaylistsViewController()
-  private let albumViewController = LibraryAlbumViewController()
+  private let albumViewController = LibraryAlbumsViewController()
   
   private let scrollview: UIScrollView = {
     let scrollView = UIScrollView()

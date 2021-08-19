@@ -11,10 +11,11 @@
 		6F00940826BFB78E0062AFB5 /* LibraryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F00940726BFB78E0062AFB5 /* LibraryPlaylistsResponse.swift */; };
 		6F00940A26BFB9020062AFB5 /* ActionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F00940926BFB9020062AFB5 /* ActionLabelView.swift */; };
 		6F1F823B26BED25900E84AE0 /* LibraryPlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F823A26BED25900E84AE0 /* LibraryPlaylistsViewController.swift */; };
-		6F1F823D26BED27800E84AE0 /* LibraryAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F823C26BED27800E84AE0 /* LibraryAlbumViewController.swift */; };
+		6F1F823D26BED27800E84AE0 /* LibraryAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F823C26BED27800E84AE0 /* LibraryAlbumsViewController.swift */; };
 		6F1F823F26BED4C000E84AE0 /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F823E26BED4C000E84AE0 /* LibraryToggleView.swift */; };
 		6F24610D26AA8EEB000C763F /* FeaturedPlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F24610C26AA8EEB000C763F /* FeaturedPlaylistCellViewModel.swift */; };
 		6F24610F26AA8F26000C763F /* RecommendedTrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F24610E26AA8F26000C763F /* RecommendedTrackCellViewModel.swift */; };
+		6F27493D26CE599A00FBB8BC /* LibraryAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27493C26CE599A00FBB8BC /* LibraryAlbumsResponse.swift */; };
 		6F32C342260E08500019AFF6 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F32C341260E08500019AFF6 /* Readme.md */; };
 		6F32C348260E2BB60019AFF6 /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32C347260E2BB60019AFF6 /* TabBarViewControllerTests.swift */; };
 		6F42FE0226B98B0600EDAC42 /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F42FE0126B98B0600EDAC42 /* PlaybackPresenter.swift */; };
@@ -97,10 +98,11 @@
 		6F00940726BFB78E0062AFB5 /* LibraryPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsResponse.swift; sourceTree = "<group>"; };
 		6F00940926BFB9020062AFB5 /* ActionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelView.swift; sourceTree = "<group>"; };
 		6F1F823A26BED25900E84AE0 /* LibraryPlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsViewController.swift; sourceTree = "<group>"; };
-		6F1F823C26BED27800E84AE0 /* LibraryAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumViewController.swift; sourceTree = "<group>"; };
+		6F1F823C26BED27800E84AE0 /* LibraryAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsViewController.swift; sourceTree = "<group>"; };
 		6F1F823E26BED4C000E84AE0 /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
 		6F24610C26AA8EEB000C763F /* FeaturedPlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCellViewModel.swift; sourceTree = "<group>"; };
 		6F24610E26AA8F26000C763F /* RecommendedTrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackCellViewModel.swift; sourceTree = "<group>"; };
+		6F27493C26CE599A00FBB8BC /* LibraryAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsResponse.swift; sourceTree = "<group>"; };
 		6F32C341260E08500019AFF6 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		6F32C347260E2BB60019AFF6 /* TabBarViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerTests.swift; sourceTree = "<group>"; };
 		6F42FE0126B98B0600EDAC42 /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
@@ -209,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1F823A26BED25900E84AE0 /* LibraryPlaylistsViewController.swift */,
-				6F1F823C26BED27800E84AE0 /* LibraryAlbumViewController.swift */,
+				6F1F823C26BED27800E84AE0 /* LibraryAlbumsViewController.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -382,6 +384,7 @@
 				6FD408B326B6EBC00035A23D /* SearchResultsResponse.swift */,
 				6F6E071626B80C1C0046311E /* SerachResult.swift */,
 				6F00940726BFB78E0062AFB5 /* LibraryPlaylistsResponse.swift */,
+				6F27493C26CE599A00FBB8BC /* LibraryAlbumsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -635,8 +638,9 @@
 				6F903165260DDE4700855B26 /* HapticsManager.swift in Sources */,
 				6FB87D30260DD89E0002FF87 /* main.swift in Sources */,
 				6F63A16726B28514000DEB18 /* CategoryCollectionViewCell.swift in Sources */,
+				6F27493D26CE599A00FBB8BC /* LibraryAlbumsResponse.swift in Sources */,
 				6F903151260DDDEF00855B26 /* PlayerViewController.swift in Sources */,
-				6F1F823D26BED27800E84AE0 /* LibraryAlbumViewController.swift in Sources */,
+				6F1F823D26BED27800E84AE0 /* LibraryAlbumsViewController.swift in Sources */,
 				6F93C14626AC5AAE00BFC2F1 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
 				6F93C14226ABF59A00BFC2F1 /* AlbumDetailsResponse.swift in Sources */,
 				6F903169260DDE6600855B26 /* Playlist.swift in Sources */,

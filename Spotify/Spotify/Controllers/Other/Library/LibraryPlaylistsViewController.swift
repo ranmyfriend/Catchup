@@ -25,7 +25,7 @@ class LibraryPlaylistsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.addSubview(noPlaylistsView)
-    noPlaylistsView.backgroundColor = .red
+    
     tableView.delegate = self
     tableView.dataSource = self
     view.addSubview(tableView)
@@ -47,8 +47,8 @@ class LibraryPlaylistsViewController: UIViewController {
     super.viewDidLayoutSubviews()
     
     tableView.frame = view.bounds
-    noPlaylistsView.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
-    noPlaylistsView.center = view.center
+    
+    noPlaylistsView.frame = CGRect(x: (view.width-150)/2, y: (view.height-150)/2, width: 150, height: 150)
   }
   
   private func fetchData() {
