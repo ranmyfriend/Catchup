@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F871C1F26D11BBB00E6CEE8 /* GreenGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */; };
+		6F871C2326D11BBD00E6CEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */; };
+		6F871C2626D11BBD00E6CEE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F871C2526D11BBD00E6CEE8 /* Preview Assets.xcassets */; };
+		6F871C3126D11BBD00E6CEE8 /* GreenGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C3026D11BBD00E6CEE8 /* GreenGardenTests.swift */; };
+		6F871C3C26D11BBD00E6CEE8 /* GreenGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C3B26D11BBD00E6CEE8 /* GreenGardenUITests.swift */; };
+		6F871C4F26D11E0500E6CEE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C4E26D11E0500E6CEE8 /* Constants.swift */; };
+		6F871C5126D1200800E6CEE8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C5026D1200800E6CEE8 /* Webservice.swift */; };
+		6F871C5326D1203100E6CEE8 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C5226D1203000E6CEE8 /* Vegetable.swift */; };
+		6FCB166126D14CB7002E660C /* VegetableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166026D14CB7002E660C /* VegetableListViewModel.swift */; };
+		6FCB166326D14EE0002E660C /* VegetableListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166226D14EE0002E660C /* VegetableListScreen.swift */; };
+		6FCB166626D1532F002E660C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166526D1532F002E660C /* View+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F871C2D26D11BBD00E6CEE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F871C1326D11BBB00E6CEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F871C1A26D11BBB00E6CEE8;
+			remoteInfo = GreenGarden;
+		};
+		6F871C3826D11BBD00E6CEE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F871C1326D11BBB00E6CEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F871C1A26D11BBB00E6CEE8;
+			remoteInfo = GreenGarden;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F871C1B26D11BBB00E6CEE8 /* GreenGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenApp.swift; sourceTree = "<group>"; };
+		6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F871C2526D11BBD00E6CEE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F871C2726D11BBD00E6CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F871C2C26D11BBD00E6CEE8 /* GreenGardenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenGardenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F871C3026D11BBD00E6CEE8 /* GreenGardenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenTests.swift; sourceTree = "<group>"; };
+		6F871C3226D11BBD00E6CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F871C3726D11BBD00E6CEE8 /* GreenGardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenGardenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F871C3B26D11BBD00E6CEE8 /* GreenGardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenUITests.swift; sourceTree = "<group>"; };
+		6F871C3D26D11BBD00E6CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F871C4E26D11E0500E6CEE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6F871C5026D1200800E6CEE8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		6F871C5226D1203000E6CEE8 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		6FCB166026D14CB7002E660C /* VegetableListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegetableListViewModel.swift; sourceTree = "<group>"; };
+		6FCB166226D14EE0002E660C /* VegetableListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegetableListScreen.swift; sourceTree = "<group>"; };
+		6FCB166526D1532F002E660C /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F871C1826D11BBB00E6CEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C2926D11BBD00E6CEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C3426D11BBD00E6CEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F871C1226D11BBB00E6CEE8 = {
+			isa = PBXGroup;
+			children = (
+				6F871C1D26D11BBB00E6CEE8 /* GreenGarden */,
+				6F871C2F26D11BBD00E6CEE8 /* GreenGardenTests */,
+				6F871C3A26D11BBD00E6CEE8 /* GreenGardenUITests */,
+				6F871C1C26D11BBB00E6CEE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F871C1C26D11BBB00E6CEE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C1B26D11BBB00E6CEE8 /* GreenGarden.app */,
+				6F871C2C26D11BBD00E6CEE8 /* GreenGardenTests.xctest */,
+				6F871C3726D11BBD00E6CEE8 /* GreenGardenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F871C1D26D11BBB00E6CEE8 /* GreenGarden */ = {
+			isa = PBXGroup;
+			children = (
+				6FCB166426D1531C002E660C /* Extensions */,
+				6F871C4D26D11DF500E6CEE8 /* Utils */,
+				6F871C4C26D11DDE00E6CEE8 /* View Models */,
+				6F871C4B26D11DD600E6CEE8 /* Models */,
+				6F871C4A26D11DD100E6CEE8 /* Services */,
+				6F871C4926D11DCC00E6CEE8 /* Screens */,
+				6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */,
+				6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */,
+				6F871C2726D11BBD00E6CEE8 /* Info.plist */,
+				6F871C2426D11BBD00E6CEE8 /* Preview Content */,
+			);
+			path = GreenGarden;
+			sourceTree = "<group>";
+		};
+		6F871C2426D11BBD00E6CEE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C2526D11BBD00E6CEE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F871C2F26D11BBD00E6CEE8 /* GreenGardenTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C3026D11BBD00E6CEE8 /* GreenGardenTests.swift */,
+				6F871C3226D11BBD00E6CEE8 /* Info.plist */,
+			);
+			path = GreenGardenTests;
+			sourceTree = "<group>";
+		};
+		6F871C3A26D11BBD00E6CEE8 /* GreenGardenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C3B26D11BBD00E6CEE8 /* GreenGardenUITests.swift */,
+				6F871C3D26D11BBD00E6CEE8 /* Info.plist */,
+			);
+			path = GreenGardenUITests;
+			sourceTree = "<group>";
+		};
+		6F871C4926D11DCC00E6CEE8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6FCB166226D14EE0002E660C /* VegetableListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F871C4A26D11DD100E6CEE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C5026D1200800E6CEE8 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6F871C4B26D11DD600E6CEE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C5226D1203000E6CEE8 /* Vegetable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F871C4C26D11DDE00E6CEE8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FCB166026D14CB7002E660C /* VegetableListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		6F871C4D26D11DF500E6CEE8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6F871C4E26D11E0500E6CEE8 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6FCB166426D1531C002E660C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FCB166526D1532F002E660C /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F871C1A26D11BBB00E6CEE8 /* GreenGarden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F871C4026D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGarden" */;
+			buildPhases = (
+				6F871C1726D11BBB00E6CEE8 /* Sources */,
+				6F871C1826D11BBB00E6CEE8 /* Frameworks */,
+				6F871C1926D11BBB00E6CEE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenGarden;
+			productName = GreenGarden;
+			productReference = 6F871C1B26D11BBB00E6CEE8 /* GreenGarden.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F871C2B26D11BBD00E6CEE8 /* GreenGardenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F871C4326D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGardenTests" */;
+			buildPhases = (
+				6F871C2826D11BBD00E6CEE8 /* Sources */,
+				6F871C2926D11BBD00E6CEE8 /* Frameworks */,
+				6F871C2A26D11BBD00E6CEE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F871C2E26D11BBD00E6CEE8 /* PBXTargetDependency */,
+			);
+			name = GreenGardenTests;
+			productName = GreenGardenTests;
+			productReference = 6F871C2C26D11BBD00E6CEE8 /* GreenGardenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F871C3626D11BBD00E6CEE8 /* GreenGardenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F871C4626D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGardenUITests" */;
+			buildPhases = (
+				6F871C3326D11BBD00E6CEE8 /* Sources */,
+				6F871C3426D11BBD00E6CEE8 /* Frameworks */,
+				6F871C3526D11BBD00E6CEE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F871C3926D11BBD00E6CEE8 /* PBXTargetDependency */,
+			);
+			name = GreenGardenUITests;
+			productName = GreenGardenUITests;
+			productReference = 6F871C3726D11BBD00E6CEE8 /* GreenGardenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F871C1326D11BBB00E6CEE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6F871C1A26D11BBB00E6CEE8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6F871C2B26D11BBD00E6CEE8 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6F871C1A26D11BBB00E6CEE8;
+					};
+					6F871C3626D11BBD00E6CEE8 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6F871C1A26D11BBB00E6CEE8;
+					};
+				};
+			};
+			buildConfigurationList = 6F871C1626D11BBB00E6CEE8 /* Build configuration list for PBXProject "GreenGarden" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F871C1226D11BBB00E6CEE8;
+			productRefGroup = 6F871C1C26D11BBB00E6CEE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F871C1A26D11BBB00E6CEE8 /* GreenGarden */,
+				6F871C2B26D11BBD00E6CEE8 /* GreenGardenTests */,
+				6F871C3626D11BBD00E6CEE8 /* GreenGardenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F871C1926D11BBB00E6CEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F871C2626D11BBD00E6CEE8 /* Preview Assets.xcassets in Resources */,
+				6F871C2326D11BBD00E6CEE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C2A26D11BBD00E6CEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C3526D11BBD00E6CEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F871C1726D11BBB00E6CEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCB166626D1532F002E660C /* View+Extensions.swift in Sources */,
+				6F871C1F26D11BBB00E6CEE8 /* GreenGardenApp.swift in Sources */,
+				6FCB166326D14EE0002E660C /* VegetableListScreen.swift in Sources */,
+				6FCB166126D14CB7002E660C /* VegetableListViewModel.swift in Sources */,
+				6F871C5326D1203100E6CEE8 /* Vegetable.swift in Sources */,
+				6F871C5126D1200800E6CEE8 /* Webservice.swift in Sources */,
+				6F871C4F26D11E0500E6CEE8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C2826D11BBD00E6CEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F871C3126D11BBD00E6CEE8 /* GreenGardenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F871C3326D11BBD00E6CEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F871C3C26D11BBD00E6CEE8 /* GreenGardenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F871C2E26D11BBD00E6CEE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F871C1A26D11BBB00E6CEE8 /* GreenGarden */;
+			targetProxy = 6F871C2D26D11BBD00E6CEE8 /* PBXContainerItemProxy */;
+		};
+		6F871C3926D11BBD00E6CEE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F871C1A26D11BBB00E6CEE8 /* GreenGarden */;
+			targetProxy = 6F871C3826D11BBD00E6CEE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F871C3E26D11BBD00E6CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F871C3F26D11BBD00E6CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F871C4126D11BBD00E6CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenGarden/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGarden;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F871C4226D11BBD00E6CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenGarden/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGarden;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F871C4426D11BBD00E6CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = GreenGardenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGardenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenGarden.app/GreenGarden";
+			};
+			name = Debug;
+		};
+		6F871C4526D11BBD00E6CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = GreenGardenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGardenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenGarden.app/GreenGarden";
+			};
+			name = Release;
+		};
+		6F871C4726D11BBD00E6CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = GreenGardenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGardenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenGarden;
+			};
+			name = Debug;
+		};
+		6F871C4826D11BBD00E6CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = GreenGardenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GreenGardenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenGarden;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F871C1626D11BBB00E6CEE8 /* Build configuration list for PBXProject "GreenGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F871C3E26D11BBD00E6CEE8 /* Debug */,
+				6F871C3F26D11BBD00E6CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F871C4026D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F871C4126D11BBD00E6CEE8 /* Debug */,
+				6F871C4226D11BBD00E6CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F871C4326D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGardenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F871C4426D11BBD00E6CEE8 /* Debug */,
+				6F871C4526D11BBD00E6CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F871C4626D11BBD00E6CEE8 /* Build configuration list for PBXNativeTarget "GreenGardenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F871C4726D11BBD00E6CEE8 /* Debug */,
+				6F871C4826D11BBD00E6CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F871C1326D11BBB00E6CEE8 /* Project object */;
+}
