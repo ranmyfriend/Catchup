@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct VegetableListScreen: View {
   
   @StateObject private var vegetableListVM = VegetableListViewModel()
@@ -17,15 +16,16 @@ struct VegetableListScreen: View {
         List {
           ForEach(vegetableListVM.vegetables, id: \.id) { vegetable in
             VegetableCell(vegetable: vegetable)
+              .background(Constants.Colors.lightGreyColor)
+              .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
           }
+          .listRowSeparator(.hidden)
         }
       }
       .listStyle(.plain)
       .task { ///This `task` added into iOS 13 to perform any async call which you wait and get a callback
         await vegetableListVM.getAll()
       }
-      .navigationTitle("Green Garden")
-      .embedInNavigationView()
     }
 }
 
@@ -44,7 +44,10 @@ struct VegetableCell: View {
         ProgressView()
       }
       Text(vegetable.name)
+      Spacer() //This spacer moves the items are into leading side.
     }
+    .padding(5)
+    .frame(maxWidth: .infinity)
   }
 }
 

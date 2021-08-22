@@ -18,6 +18,7 @@
 		6FCB166126D14CB7002E660C /* VegetableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166026D14CB7002E660C /* VegetableListViewModel.swift */; };
 		6FCB166326D14EE0002E660C /* VegetableListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166226D14EE0002E660C /* VegetableListScreen.swift */; };
 		6FCB166626D1532F002E660C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166526D1532F002E660C /* View+Extensions.swift */; };
+		6FCB166826D228BE002E660C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB166726D228BE002E660C /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		6FCB166026D14CB7002E660C /* VegetableListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegetableListViewModel.swift; sourceTree = "<group>"; };
 		6FCB166226D14EE0002E660C /* VegetableListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegetableListScreen.swift; sourceTree = "<group>"; };
 		6FCB166526D1532F002E660C /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		6FCB166726D228BE002E660C /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		6F871C4926D11DCC00E6CEE8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6FCB166726D228BE002E660C /* MainScreen.swift */,
 				6FCB166226D14EE0002E660C /* VegetableListScreen.swift */,
 			);
 			path = Screens;
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCB166826D228BE002E660C /* MainScreen.swift in Sources */,
 				6FCB166626D1532F002E660C /* View+Extensions.swift in Sources */,
 				6F871C1F26D11BBB00E6CEE8 /* GreenGardenApp.swift in Sources */,
 				6FCB166326D14EE0002E660C /* VegetableListScreen.swift in Sources */,
