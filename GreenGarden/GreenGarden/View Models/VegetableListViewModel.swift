@@ -48,3 +48,12 @@ struct VegetableViewModel {
   }
   
 }
+
+extension VegetableViewModel {
+  
+  static func `default`() -> VegetableViewModel {
+    let vegetable = Vegetable(vegetableId: 1, name: "Carrot", description: "The carrot is a root vegetable, usually orange in colour, though purple, red, white, and yellow varieties exist", thumbnailImage: "http://www.highoncoding.com/VegetableImages/carrots.png", seedDepth: "1/4-1/2", growingSoilTemp: "60-65 F (16-18 C)", sowingDescription: "\r\nEarly autumn is the best month to plant carrot seeds. Find a soft ground to sow the seeds. Pour a small glass of water between all of the seeds without washing away the dirt (This step should be performed every day).", growingDescription: "The seeds will start to sprout in couple of weeks. When watering the seeds make sure to avoid getting the leaves wet. The wetting of leaves can result in burning holes into the leaves from the sun.")
+    return VegetableViewModel(vegetable: vegetable)
+  }
+  
+}

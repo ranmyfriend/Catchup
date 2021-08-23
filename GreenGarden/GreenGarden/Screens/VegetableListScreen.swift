@@ -23,7 +23,7 @@ struct VegetableListScreen: View {
         }
       }
       .listStyle(.plain)
-      .task { ///This `task` added into iOS 13 to perform any async call which you wait and get a callback
+      .task { ///This `task` added into iOS 15 to perform any async call which you wait and get a callback
         await vegetableListVM.getAll()
       }
     }
@@ -35,7 +35,7 @@ struct VegetableCell: View {
   
   var body: some View {
     HStack {
-      //In iOS13 Apple they have introduced AsyncImage Framework helper to load image using url
+      //In iOS15 Apple they have introduced AsyncImage Framework helper to load image using url
       AsyncImage(url: vegetable.thumbnailUrl) { image in
         image
           .resizable()
