@@ -44,14 +44,14 @@ struct VegetableDetailScreen: View {
         
         switch selection {
         case .about:
-          Text("About Us")
+          AboutUs(vegetable: vegetable)
         case .companions:
           Text("Companions")
         case .problems:
           Text("Problems")
         }
-        
       }
+      .navigationTitle(vegetable.name)
     }
   }
 }
@@ -59,5 +59,6 @@ struct VegetableDetailScreen: View {
 struct VegetableDetailScreen_Previews: PreviewProvider {
   static var previews: some View {
     VegetableDetailScreen(vegetable: VegetableViewModel.default())
+      .embedInNavigationView()
   }
 }

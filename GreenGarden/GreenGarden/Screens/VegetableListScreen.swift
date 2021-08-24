@@ -15,14 +15,18 @@ struct VegetableListScreen: View {
       VStack {
         List {
           ForEach(vegetableListVM.vegetables, id: \.id) { vegetable in
-            VegetableCell(vegetable: vegetable)
-              .background(Constants.Colors.lightGreyColor)
-              .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+            
+            NavigationLink(destination: VegetableDetailScreen(vegetable: vegetable)) {
+              VegetableCell(vegetable: vegetable)
+                .background(Constants.Colors.lightGreyColor)
+                .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+            }
           }
           .listRowSeparator(.hidden)
         }
       }
       .listStyle(.plain)
+      .navigationTitle("Green Garden")
       .task { ///This `task` added into iOS 15 to perform any async call which you wait and get a callback
         await vegetableListVM.getAll()
       }
@@ -55,5 +59,7 @@ struct VegetableCell: View {
 struct VegetableListScreen_Previews: PreviewProvider {
     static var previews: some View {
       VegetableListScreen()
+        .navigationTitle("Green Garden")
+        .embedInNavigationView()
     }
 }

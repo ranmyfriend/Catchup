@@ -47,6 +47,22 @@ struct VegetableViewModel {
     URL(string: vegetable.thumbnailImage)
   }
   
+  var seedDepth: String {
+    vegetable.seedDepth
+  }
+  
+  var growingSoilTemperature: String {
+    vegetable.growingSoilTemp
+  }
+  
+  var sowingDescription: String {
+    vegetable.sowingDescription
+  }
+  
+  var growingDescription: String {
+    vegetable.growingDescription
+  }
+  
 }
 
 extension VegetableViewModel {
