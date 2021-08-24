@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Vegetable: Decodable {
+///DTO: Data Transfer Object
+
+struct VegetableDTO: Decodable {
   let vegetableId: Int
   let name: String
   let description: String

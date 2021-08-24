@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19197" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Vegetable" representedClassName="Vegetable" syncable="YES" codeGenerationType="class">
+        <attribute name="growingDescription" optional="YES" attributeType="String"/>
+        <attribute name="growingSoilTemp" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="seedDepth" optional="YES" attributeType="String"/>
+        <attribute name="sowingDescription" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailImage" optional="YES" attributeType="String"/>
+        <attribute name="vegetableDescription" optional="YES" attributeType="String"/>
+        <attribute name="vegetableId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Vegetable" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F58915E26D52E6D006D7B1D /* GreenGardenModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F58915C26D52E6D006D7B1D /* GreenGardenModel.xcdatamodeld */; };
+		6F858A6826D5306500100D41 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A6726D5306500100D41 /* CoreDataManager.swift */; };
 		6F871C1F26D11BBB00E6CEE8 /* GreenGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */; };
 		6F871C2326D11BBD00E6CEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */; };
 		6F871C2626D11BBD00E6CEE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F871C2526D11BBD00E6CEE8 /* Preview Assets.xcassets */; };
@@ -14,7 +16,7 @@
 		6F871C3C26D11BBD00E6CEE8 /* GreenGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C3B26D11BBD00E6CEE8 /* GreenGardenUITests.swift */; };
 		6F871C4F26D11E0500E6CEE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C4E26D11E0500E6CEE8 /* Constants.swift */; };
 		6F871C5126D1200800E6CEE8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C5026D1200800E6CEE8 /* Webservice.swift */; };
-		6F871C5326D1203100E6CEE8 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C5226D1203000E6CEE8 /* Vegetable.swift */; };
+		6F871C5326D1203100E6CEE8 /* VegetableDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F871C5226D1203000E6CEE8 /* VegetableDTO.swift */; };
 		6F897BE326D5026100ECBCEC /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F897BE226D5026100ECBCEC /* AboutUs.swift */; };
 		6F897BE526D503B700ECBCEC /* TwoColoumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F897BE426D503B700ECBCEC /* TwoColoumnView.swift */; };
 		6F897BE726D504A900ECBCEC /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F897BE626D504A900ECBCEC /* DescriptionView.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F58915D26D52E6D006D7B1D /* GreenGarden.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenGarden.xcdatamodel; sourceTree = "<group>"; };
+		6F858A6726D5306500100D41 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6F871C1B26D11BBB00E6CEE8 /* GreenGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenApp.swift; sourceTree = "<group>"; };
 		6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		6F871C3D26D11BBD00E6CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F871C4E26D11E0500E6CEE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F871C5026D1200800E6CEE8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
-		6F871C5226D1203000E6CEE8 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		6F871C5226D1203000E6CEE8 /* VegetableDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDTO.swift; sourceTree = "<group>"; };
 		6F897BE226D5026100ECBCEC /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		6F897BE426D503B700ECBCEC /* TwoColoumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColoumnView.swift; sourceTree = "<group>"; };
 		6F897BE626D504A900ECBCEC /* DescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F858A6626D5304F00100D41 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A6726D5306500100D41 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		6F871C1226D11BBB00E6CEE8 = {
 			isa = PBXGroup;
 			children = (
@@ -115,17 +127,19 @@
 		6F871C1D26D11BBB00E6CEE8 /* GreenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				6F858A6626D5304F00100D41 /* Managers */,
 				6F897BE126D5023800ECBCEC /* Views */,
 				6FCB166426D1531C002E660C /* Extensions */,
 				6F871C4D26D11DF500E6CEE8 /* Utils */,
 				6F871C4C26D11DDE00E6CEE8 /* View Models */,
-				6F871C4B26D11DD600E6CEE8 /* Models */,
+				6F871C4B26D11DD600E6CEE8 /* DTOs */,
 				6F871C4A26D11DD100E6CEE8 /* Services */,
 				6F871C4926D11DCC00E6CEE8 /* Screens */,
 				6F871C1E26D11BBB00E6CEE8 /* GreenGardenApp.swift */,
 				6F871C2226D11BBD00E6CEE8 /* Assets.xcassets */,
 				6F871C2726D11BBD00E6CEE8 /* Info.plist */,
 				6F871C2426D11BBD00E6CEE8 /* Preview Content */,
+				6F58915C26D52E6D006D7B1D /* GreenGardenModel.xcdatamodeld */,
 			);
 			path = GreenGarden;
 			sourceTree = "<group>";
@@ -174,12 +188,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		6F871C4B26D11DD600E6CEE8 /* Models */ = {
+		6F871C4B26D11DD600E6CEE8 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				6F871C5226D1203000E6CEE8 /* Vegetable.swift */,
+				6F871C5226D1203000E6CEE8 /* VegetableDTO.swift */,
 			);
-			path = Models;
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 		6F871C4C26D11DDE00E6CEE8 /* View Models */ = {
@@ -345,17 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F858A6826D5306500100D41 /* CoreDataManager.swift in Sources */,
 				6FCB166826D228BE002E660C /* MainScreen.swift in Sources */,
 				6FCB166626D1532F002E660C /* View+Extensions.swift in Sources */,
 				6F871C1F26D11BBB00E6CEE8 /* GreenGardenApp.swift in Sources */,
 				6F897BE726D504A900ECBCEC /* DescriptionView.swift in Sources */,
 				6FCB166326D14EE0002E660C /* VegetableListScreen.swift in Sources */,
 				6FCB166126D14CB7002E660C /* VegetableListViewModel.swift in Sources */,
-				6F871C5326D1203100E6CEE8 /* Vegetable.swift in Sources */,
+				6F871C5326D1203100E6CEE8 /* VegetableDTO.swift in Sources */,
 				6F871C5126D1200800E6CEE8 /* Webservice.swift in Sources */,
 				6F897BE326D5026100ECBCEC /* AboutUs.swift in Sources */,
 				6F871C4F26D11E0500E6CEE8 /* Constants.swift in Sources */,
 				6F897BE526D503B700ECBCEC /* TwoColoumnView.swift in Sources */,
+				6F58915E26D52E6D006D7B1D /* GreenGardenModel.xcdatamodeld in Sources */,
 				6FCB166A26D257D1002E660C /* VegetableDetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +692,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F58915C26D52E6D006D7B1D /* GreenGardenModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F58915D26D52E6D006D7B1D /* GreenGarden.xcdatamodel */,
+			);
+			currentVersion = 6F58915D26D52E6D006D7B1D /* GreenGarden.xcdatamodel */;
+			path = GreenGardenModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6F871C1326D11BBB00E6CEE8 /* Project object */;
 }

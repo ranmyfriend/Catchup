@@ -14,7 +14,7 @@ enum NetworkError: Error {
 
 struct Webservice {
   
-  func getAllVegetables(url: URL?) async throws -> [Vegetable] {
+  func getAllVegetables(url: URL?) async throws -> [VegetableDTO] {
     
     guard let url = url else {
       throw NetworkError.badUrl
@@ -26,7 +26,7 @@ struct Webservice {
       throw NetworkError.invalidRequest
     }
     
-      let vegetables = try? JSONDecoder().decode([Vegetable].self, from: data)
+      let vegetables = try? JSONDecoder().decode([VegetableDTO].self, from: data)
       return vegetables ?? []
   }
   

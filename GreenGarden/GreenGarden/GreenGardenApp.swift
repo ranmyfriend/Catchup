@@ -5,7 +5,6 @@
 //  Created by BKS-GGS on 21/08/21.
 //
 
-
 /*
  Author: https://www.youtube.com/watch?v=6-thiPMKhFo
  Version: Xcode 13.0 beta & iOS 15
@@ -17,6 +16,7 @@ import SwiftUI
 struct GreenGardenApp: App {
   
   init() {
+    let coreDM = CoreDataManager.shared
     setupTheme()
   }
   
