@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F858A7626D6880400100D41 /* GraphQLCountryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A7526D6880400100D41 /* GraphQLCountryApp.swift */; };
+		6F858A7826D6880400100D41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A7726D6880400100D41 /* ContentView.swift */; };
+		6F858A7A26D6880700100D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F858A7926D6880700100D41 /* Assets.xcassets */; };
+		6F858A7D26D6880700100D41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F858A7C26D6880700100D41 /* Preview Assets.xcassets */; };
+		6F858A8726D6880700100D41 /* GraphQLCountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A8626D6880700100D41 /* GraphQLCountryTests.swift */; };
+		6F858A9126D6880700100D41 /* GraphQLCountryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A9026D6880700100D41 /* GraphQLCountryUITests.swift */; };
+		6F858A9326D6880700100D41 /* GraphQLCountryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858A9226D6880700100D41 /* GraphQLCountryUITestsLaunchTests.swift */; };
+		6F858AA226D6886500100D41 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858AA026D6886500100D41 /* Apollo.swift */; };
+		6F858AA326D6886500100D41 /* Queries.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F858AA126D6886500100D41 /* Queries.graphql.swift */; };
+		6F858AA626D689C300100D41 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6F858AA526D689C300100D41 /* Apollo */; };
+		6F858AA826D689C300100D41 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6F858AA726D689C300100D41 /* ApolloWebSocket */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F858A8326D6880700100D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F858A6A26D6880400100D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F858A7126D6880400100D41;
+			remoteInfo = GraphQLCountry;
+		};
+		6F858A8D26D6880700100D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F858A6A26D6880400100D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F858A7126D6880400100D41;
+			remoteInfo = GraphQLCountry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F858A7226D6880400100D41 /* GraphQLCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F858A7526D6880400100D41 /* GraphQLCountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLCountryApp.swift; sourceTree = "<group>"; };
+		6F858A7726D6880400100D41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F858A7926D6880700100D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F858A7C26D6880700100D41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F858A8226D6880700100D41 /* GraphQLCountryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLCountryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F858A8626D6880700100D41 /* GraphQLCountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLCountryTests.swift; sourceTree = "<group>"; };
+		6F858A8C26D6880700100D41 /* GraphQLCountryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLCountryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F858A9026D6880700100D41 /* GraphQLCountryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLCountryUITests.swift; sourceTree = "<group>"; };
+		6F858A9226D6880700100D41 /* GraphQLCountryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLCountryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6F858AA026D6886500100D41 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		6F858AA126D6886500100D41 /* Queries.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queries.graphql.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F858A6F26D6880400100D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F858AA626D689C300100D41 /* Apollo in Frameworks */,
+				6F858AA826D689C300100D41 /* ApolloWebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A7F26D6880700100D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A8926D6880700100D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F858A6926D6880400100D41 = {
+			isa = PBXGroup;
+			children = (
+				6F858A7426D6880400100D41 /* GraphQLCountry */,
+				6F858A8526D6880700100D41 /* GraphQLCountryTests */,
+				6F858A8F26D6880700100D41 /* GraphQLCountryUITests */,
+				6F858A7326D6880400100D41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F858A7326D6880400100D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A7226D6880400100D41 /* GraphQLCountry.app */,
+				6F858A8226D6880700100D41 /* GraphQLCountryTests.xctest */,
+				6F858A8C26D6880700100D41 /* GraphQLCountryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F858A7426D6880400100D41 /* GraphQLCountry */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A9F26D6882300100D41 /* GraphQL */,
+				6F858A7526D6880400100D41 /* GraphQLCountryApp.swift */,
+				6F858A7726D6880400100D41 /* ContentView.swift */,
+				6F858A7926D6880700100D41 /* Assets.xcassets */,
+				6F858A7B26D6880700100D41 /* Preview Content */,
+			);
+			path = GraphQLCountry;
+			sourceTree = "<group>";
+		};
+		6F858A7B26D6880700100D41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A7C26D6880700100D41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F858A8526D6880700100D41 /* GraphQLCountryTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A8626D6880700100D41 /* GraphQLCountryTests.swift */,
+			);
+			path = GraphQLCountryTests;
+			sourceTree = "<group>";
+		};
+		6F858A8F26D6880700100D41 /* GraphQLCountryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F858A9026D6880700100D41 /* GraphQLCountryUITests.swift */,
+				6F858A9226D6880700100D41 /* GraphQLCountryUITestsLaunchTests.swift */,
+			);
+			path = GraphQLCountryUITests;
+			sourceTree = "<group>";
+		};
+		6F858A9F26D6882300100D41 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				6F858AA026D6886500100D41 /* Apollo.swift */,
+				6F858AA126D6886500100D41 /* Queries.graphql.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F858A7126D6880400100D41 /* GraphQLCountry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F858A9626D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountry" */;
+			buildPhases = (
+				6F858A6E26D6880400100D41 /* Sources */,
+				6F858A6F26D6880400100D41 /* Frameworks */,
+				6F858A7026D6880400100D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphQLCountry;
+			packageProductDependencies = (
+				6F858AA526D689C300100D41 /* Apollo */,
+				6F858AA726D689C300100D41 /* ApolloWebSocket */,
+			);
+			productName = GraphQLCountry;
+			productReference = 6F858A7226D6880400100D41 /* GraphQLCountry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F858A8126D6880700100D41 /* GraphQLCountryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F858A9926D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountryTests" */;
+			buildPhases = (
+				6F858A7E26D6880700100D41 /* Sources */,
+				6F858A7F26D6880700100D41 /* Frameworks */,
+				6F858A8026D6880700100D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F858A8426D6880700100D41 /* PBXTargetDependency */,
+			);
+			name = GraphQLCountryTests;
+			productName = GraphQLCountryTests;
+			productReference = 6F858A8226D6880700100D41 /* GraphQLCountryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F858A8B26D6880700100D41 /* GraphQLCountryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F858A9C26D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountryUITests" */;
+			buildPhases = (
+				6F858A8826D6880700100D41 /* Sources */,
+				6F858A8926D6880700100D41 /* Frameworks */,
+				6F858A8A26D6880700100D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F858A8E26D6880700100D41 /* PBXTargetDependency */,
+			);
+			name = GraphQLCountryUITests;
+			productName = GraphQLCountryUITests;
+			productReference = 6F858A8C26D6880700100D41 /* GraphQLCountryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F858A6A26D6880400100D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6F858A7126D6880400100D41 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6F858A8126D6880700100D41 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6F858A7126D6880400100D41;
+					};
+					6F858A8B26D6880700100D41 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6F858A7126D6880400100D41;
+					};
+				};
+			};
+			buildConfigurationList = 6F858A6D26D6880400100D41 /* Build configuration list for PBXProject "GraphQLCountry" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F858A6926D6880400100D41;
+			packageReferences = (
+				6F858AA426D689C300100D41 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 6F858A7326D6880400100D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F858A7126D6880400100D41 /* GraphQLCountry */,
+				6F858A8126D6880700100D41 /* GraphQLCountryTests */,
+				6F858A8B26D6880700100D41 /* GraphQLCountryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F858A7026D6880400100D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F858A7D26D6880700100D41 /* Preview Assets.xcassets in Resources */,
+				6F858A7A26D6880700100D41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A8026D6880700100D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A8A26D6880700100D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F858A6E26D6880400100D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F858A7826D6880400100D41 /* ContentView.swift in Sources */,
+				6F858AA226D6886500100D41 /* Apollo.swift in Sources */,
+				6F858A7626D6880400100D41 /* GraphQLCountryApp.swift in Sources */,
+				6F858AA326D6886500100D41 /* Queries.graphql.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A7E26D6880700100D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F858A8726D6880700100D41 /* GraphQLCountryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F858A8826D6880700100D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F858A9126D6880700100D41 /* GraphQLCountryUITests.swift in Sources */,
+				6F858A9326D6880700100D41 /* GraphQLCountryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F858A8426D6880700100D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F858A7126D6880400100D41 /* GraphQLCountry */;
+			targetProxy = 6F858A8326D6880700100D41 /* PBXContainerItemProxy */;
+		};
+		6F858A8E26D6880700100D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F858A7126D6880400100D41 /* GraphQLCountry */;
+			targetProxy = 6F858A8D26D6880700100D41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F858A9426D6880700100D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F858A9526D6880700100D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6F858A9726D6880700100D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraphQLCountry/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6F858A9826D6880700100D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraphQLCountry/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6F858A9A26D6880700100D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQLCountry.app/Contents/MacOS/GraphQLCountry";
+			};
+			name = Debug;
+		};
+		6F858A9B26D6880700100D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQLCountry.app/Contents/MacOS/GraphQLCountry";
+			};
+			name = Release;
+		};
+		6F858A9D26D6880700100D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GraphQLCountry;
+			};
+			name = Debug;
+		};
+		6F858A9E26D6880700100D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.GraphQLCountryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GraphQLCountry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F858A6D26D6880400100D41 /* Build configuration list for PBXProject "GraphQLCountry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F858A9426D6880700100D41 /* Debug */,
+				6F858A9526D6880700100D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F858A9626D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F858A9726D6880700100D41 /* Debug */,
+				6F858A9826D6880700100D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F858A9926D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F858A9A26D6880700100D41 /* Debug */,
+				6F858A9B26D6880700100D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F858A9C26D6880700100D41 /* Build configuration list for PBXNativeTarget "GraphQLCountryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F858A9D26D6880700100D41 /* Debug */,
+				6F858A9E26D6880700100D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F858AA426D689C300100D41 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F858AA526D689C300100D41 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F858AA426D689C300100D41 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		6F858AA726D689C300100D41 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F858AA426D689C300100D41 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F858A6A26D6880400100D41 /* Project object */;
+}
