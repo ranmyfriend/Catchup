@@ -16,8 +16,20 @@ import SwiftUI
 struct GreenGardenApp: App {
   
   init() {
-    let coreDM = CoreDataManager.shared
     setupTheme()
+    
+    /// we want to execute async func so we are using Task
+    Task { [self] in // to avoiding the self being capture in the closure.
+      await self.importData()
+    }
+  }
+  
+  private func importData() async {
+    do {
+      try await CoreDataManager.shared.importData()
+    } catch {
+      print(error)
+    }
   }
   
   private func setupTheme() {
