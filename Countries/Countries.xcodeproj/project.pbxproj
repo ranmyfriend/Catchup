@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F1A9A8726D8F2DD0060E476 /* CountriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9A8626D8F2DD0060E476 /* CountriesApp.swift */; };
+		6F1A9A8926D8F2DD0060E476 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9A8826D8F2DD0060E476 /* ContentView.swift */; };
+		6F1A9A8B26D8F2DE0060E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A9A8A26D8F2DE0060E476 /* Assets.xcassets */; };
+		6F1A9A8E26D8F2DE0060E476 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A9A8D26D8F2DE0060E476 /* Preview Assets.xcassets */; };
+		6F1A9A9926D8F2DE0060E476 /* CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9A9826D8F2DE0060E476 /* CountriesTests.swift */; };
+		6F1A9AA426D8F2DE0060E476 /* CountriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9AA326D8F2DE0060E476 /* CountriesUITests.swift */; };
+		6F1A9AB326D8F37C0060E476 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9AB226D8F37C0060E476 /* ApolloCodegenLib */; };
+		6F1A9AB526D8F37C0060E476 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9AB426D8F37C0060E476 /* ApolloSQLite */; };
+		6F1A9AB726D8F37C0060E476 /* ApolloUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9AB626D8F37C0060E476 /* ApolloUtils */; };
+		6F1A9AB926D8F37C0060E476 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9AB826D8F37C0060E476 /* Apollo */; };
+		6F1A9ABB26D8F37C0060E476 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9ABA26D8F37C0060E476 /* ApolloWebSocket */; };
+		6F1A9ABD26D8F37C0060E476 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1A9ABC26D8F37C0060E476 /* ApolloAPI */; };
+		6F1A9AC126D8F5850060E476 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A9AC026D8F5850060E476 /* Queries.graphql */; };
+		6F1A9AC626D8F68F0060E476 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A9AC526D8F68F0060E476 /* schema.json */; };
+		6F1A9AC826D8F6A90060E476 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9AC726D8F6A90060E476 /* API.swift */; };
+		6F1A9ACA26D8F6FE0060E476 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A9AC926D8F6FE0060E476 /* Apollo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F1A9A9526D8F2DE0060E476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1A9A7B26D8F2DD0060E476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1A9A8226D8F2DD0060E476;
+			remoteInfo = Countries;
+		};
+		6F1A9AA026D8F2DE0060E476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1A9A7B26D8F2DD0060E476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1A9A8226D8F2DD0060E476;
+			remoteInfo = Countries;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F1A9A8326D8F2DD0060E476 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A9A8626D8F2DD0060E476 /* CountriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesApp.swift; sourceTree = "<group>"; };
+		6F1A9A8826D8F2DD0060E476 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F1A9A8A26D8F2DE0060E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1A9A8D26D8F2DE0060E476 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F1A9A8F26D8F2DE0060E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1A9A9426D8F2DE0060E476 /* CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A9A9826D8F2DE0060E476 /* CountriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTests.swift; sourceTree = "<group>"; };
+		6F1A9A9A26D8F2DE0060E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1A9A9F26D8F2DE0060E476 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A9AA326D8F2DE0060E476 /* CountriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITests.swift; sourceTree = "<group>"; };
+		6F1A9AA526D8F2DE0060E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1A9AC026D8F5850060E476 /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
+		6F1A9AC526D8F68F0060E476 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		6F1A9AC726D8F6A90060E476 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6F1A9AC926D8F6FE0060E476 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F1A9A8026D8F2DD0060E476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A9ABD26D8F37C0060E476 /* ApolloAPI in Frameworks */,
+				6F1A9AB326D8F37C0060E476 /* ApolloCodegenLib in Frameworks */,
+				6F1A9AB926D8F37C0060E476 /* Apollo in Frameworks */,
+				6F1A9ABB26D8F37C0060E476 /* ApolloWebSocket in Frameworks */,
+				6F1A9AB526D8F37C0060E476 /* ApolloSQLite in Frameworks */,
+				6F1A9AB726D8F37C0060E476 /* ApolloUtils in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9126D8F2DE0060E476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9C26D8F2DE0060E476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F1A9A7A26D8F2DD0060E476 = {
+			isa = PBXGroup;
+			children = (
+				6F1A9A8526D8F2DD0060E476 /* Countries */,
+				6F1A9A9726D8F2DE0060E476 /* CountriesTests */,
+				6F1A9AA226D8F2DE0060E476 /* CountriesUITests */,
+				6F1A9A8426D8F2DD0060E476 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F1A9A8426D8F2DD0060E476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A9A8326D8F2DD0060E476 /* Countries.app */,
+				6F1A9A9426D8F2DE0060E476 /* CountriesTests.xctest */,
+				6F1A9A9F26D8F2DE0060E476 /* CountriesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1A9A8526D8F2DD0060E476 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A9AC526D8F68F0060E476 /* schema.json */,
+				6F1A9AC726D8F6A90060E476 /* API.swift */,
+				6F1A9A8626D8F2DD0060E476 /* CountriesApp.swift */,
+				6F1A9AC026D8F5850060E476 /* Queries.graphql */,
+				6F1A9A8826D8F2DD0060E476 /* ContentView.swift */,
+				6F1A9AC926D8F6FE0060E476 /* Apollo.swift */,
+				6F1A9A8A26D8F2DE0060E476 /* Assets.xcassets */,
+				6F1A9A8F26D8F2DE0060E476 /* Info.plist */,
+				6F1A9A8C26D8F2DE0060E476 /* Preview Content */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		6F1A9A8C26D8F2DE0060E476 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A9A8D26D8F2DE0060E476 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F1A9A9726D8F2DE0060E476 /* CountriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A9A9826D8F2DE0060E476 /* CountriesTests.swift */,
+				6F1A9A9A26D8F2DE0060E476 /* Info.plist */,
+			);
+			path = CountriesTests;
+			sourceTree = "<group>";
+		};
+		6F1A9AA226D8F2DE0060E476 /* CountriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A9AA326D8F2DE0060E476 /* CountriesUITests.swift */,
+				6F1A9AA526D8F2DE0060E476 /* Info.plist */,
+			);
+			path = CountriesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F1A9A8226D8F2DD0060E476 /* Countries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A9AA826D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "Countries" */;
+			buildPhases = (
+				6F1A9A7F26D8F2DD0060E476 /* Sources */,
+				6F1A9A8026D8F2DD0060E476 /* Frameworks */,
+				6F1A9A8126D8F2DD0060E476 /* Resources */,
+				6F1A9AC226D8F5970060E476 /* Generate Apollo GraphQL API */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Countries;
+			packageProductDependencies = (
+				6F1A9AB226D8F37C0060E476 /* ApolloCodegenLib */,
+				6F1A9AB426D8F37C0060E476 /* ApolloSQLite */,
+				6F1A9AB626D8F37C0060E476 /* ApolloUtils */,
+				6F1A9AB826D8F37C0060E476 /* Apollo */,
+				6F1A9ABA26D8F37C0060E476 /* ApolloWebSocket */,
+				6F1A9ABC26D8F37C0060E476 /* ApolloAPI */,
+			);
+			productName = Countries;
+			productReference = 6F1A9A8326D8F2DD0060E476 /* Countries.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F1A9A9326D8F2DE0060E476 /* CountriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A9AAB26D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "CountriesTests" */;
+			buildPhases = (
+				6F1A9A9026D8F2DE0060E476 /* Sources */,
+				6F1A9A9126D8F2DE0060E476 /* Frameworks */,
+				6F1A9A9226D8F2DE0060E476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1A9A9626D8F2DE0060E476 /* PBXTargetDependency */,
+			);
+			name = CountriesTests;
+			productName = CountriesTests;
+			productReference = 6F1A9A9426D8F2DE0060E476 /* CountriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F1A9A9E26D8F2DE0060E476 /* CountriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A9AAE26D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "CountriesUITests" */;
+			buildPhases = (
+				6F1A9A9B26D8F2DE0060E476 /* Sources */,
+				6F1A9A9C26D8F2DE0060E476 /* Frameworks */,
+				6F1A9A9D26D8F2DE0060E476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1A9AA126D8F2DE0060E476 /* PBXTargetDependency */,
+			);
+			name = CountriesUITests;
+			productName = CountriesUITests;
+			productReference = 6F1A9A9F26D8F2DE0060E476 /* CountriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1A9A7B26D8F2DD0060E476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6F1A9A8226D8F2DD0060E476 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6F1A9A9326D8F2DE0060E476 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6F1A9A8226D8F2DD0060E476;
+					};
+					6F1A9A9E26D8F2DE0060E476 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6F1A9A8226D8F2DD0060E476;
+					};
+				};
+			};
+			buildConfigurationList = 6F1A9A7E26D8F2DD0060E476 /* Build configuration list for PBXProject "Countries" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F1A9A7A26D8F2DD0060E476;
+			packageReferences = (
+				6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 6F1A9A8426D8F2DD0060E476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F1A9A8226D8F2DD0060E476 /* Countries */,
+				6F1A9A9326D8F2DE0060E476 /* CountriesTests */,
+				6F1A9A9E26D8F2DE0060E476 /* CountriesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F1A9A8126D8F2DD0060E476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A9AC626D8F68F0060E476 /* schema.json in Resources */,
+				6F1A9A8E26D8F2DE0060E476 /* Preview Assets.xcassets in Resources */,
+				6F1A9AC126D8F5850060E476 /* Queries.graphql in Resources */,
+				6F1A9A8B26D8F2DE0060E476 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9226D8F2DE0060E476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9D26D8F2DE0060E476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F1A9AC226D8F5970060E476 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F1A9A7F26D8F2DD0060E476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A9A8926D8F2DD0060E476 /* ContentView.swift in Sources */,
+				6F1A9AC826D8F6A90060E476 /* API.swift in Sources */,
+				6F1A9ACA26D8F6FE0060E476 /* Apollo.swift in Sources */,
+				6F1A9A8726D8F2DD0060E476 /* CountriesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9026D8F2DE0060E476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A9A9926D8F2DE0060E476 /* CountriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A9A9B26D8F2DE0060E476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A9AA426D8F2DE0060E476 /* CountriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F1A9A9626D8F2DE0060E476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1A9A8226D8F2DD0060E476 /* Countries */;
+			targetProxy = 6F1A9A9526D8F2DE0060E476 /* PBXContainerItemProxy */;
+		};
+		6F1A9AA126D8F2DE0060E476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1A9A8226D8F2DD0060E476 /* Countries */;
+			targetProxy = 6F1A9AA026D8F2DE0060E476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F1A9AA626D8F2DE0060E476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F1A9AA726D8F2DE0060E476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1A9AA926D8F2DE0060E476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Countries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.Countries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F1A9AAA26D8F2DE0060E476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Countries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.Countries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F1A9AAC26D8F2DE0060E476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = CountriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.CountriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/Countries";
+			};
+			name = Debug;
+		};
+		6F1A9AAD26D8F2DE0060E476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = CountriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.CountriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/Countries";
+			};
+			name = Release;
+		};
+		6F1A9AAF26D8F2DE0060E476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = CountriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.CountriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Countries;
+			};
+			name = Debug;
+		};
+		6F1A9AB026D8F2DE0060E476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35P9S7STBV;
+				INFOPLIST_FILE = CountriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawRect.CountriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Countries;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F1A9A7E26D8F2DD0060E476 /* Build configuration list for PBXProject "Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A9AA626D8F2DE0060E476 /* Debug */,
+				6F1A9AA726D8F2DE0060E476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A9AA826D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A9AA926D8F2DE0060E476 /* Debug */,
+				6F1A9AAA26D8F2DE0060E476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A9AAB26D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "CountriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A9AAC26D8F2DE0060E476 /* Debug */,
+				6F1A9AAD26D8F2DE0060E476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A9AAE26D8F2DE0060E476 /* Build configuration list for PBXNativeTarget "CountriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A9AAF26D8F2DE0060E476 /* Debug */,
+				6F1A9AB026D8F2DE0060E476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.47.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F1A9AB226D8F37C0060E476 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		6F1A9AB426D8F37C0060E476 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		6F1A9AB626D8F37C0060E476 /* ApolloUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloUtils;
+		};
+		6F1A9AB826D8F37C0060E476 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		6F1A9ABA26D8F37C0060E476 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		6F1A9ABC26D8F37C0060E476 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1A9AB126D8F37C0060E476 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F1A9A7B26D8F2DD0060E476 /* Project object */;
+}
