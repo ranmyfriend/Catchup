@@ -14,7 +14,12 @@ struct ContentView: View {
             NavigationView {
               VStack {
                 List(countries, id: \.code) { country in
-                  Text(country.name)
+                  HStack {
+                    Text(country.emoji)
+                    Text(country.name)
+                    Spacer()
+                    Text(country.currency ?? "-")
+                  }
                 }
               }
               .onAppear(perform: {
