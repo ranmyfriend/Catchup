@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F1B68FC26D9948000DE5CFC /* schema.docs.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B68FB26D9948000DE5CFC /* schema.docs.graphql */; };
+		6F1B68FC26D9948000DE5CFC /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B68FB26D9948000DE5CFC /* Queries.graphql */; };
 		6F1E6BD026D9928700A8B775 /* GitHub_ClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E6BCF26D9928700A8B775 /* GitHub_ClientApp.swift */; };
 		6F1E6BD226D9928700A8B775 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E6BD126D9928700A8B775 /* ContentView.swift */; };
 		6F1E6BD426D9928800A8B775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1E6BD326D9928800A8B775 /* Assets.xcassets */; };
@@ -20,6 +20,7 @@
 		6F1E6C0226D992DE00A8B775 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1E6C0126D992DE00A8B775 /* Apollo */; };
 		6F1E6C0426D992DE00A8B775 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1E6C0326D992DE00A8B775 /* ApolloWebSocket */; };
 		6F1E6C0626D992DE00A8B775 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6F1E6C0526D992DE00A8B775 /* ApolloAPI */; };
+		6F3BE70826DA566900213F3B /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F3BE70726DA566800213F3B /* schema.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F1B68FB26D9948000DE5CFC /* schema.docs.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.docs.graphql; sourceTree = "<group>"; };
+		6F1B68FB26D9948000DE5CFC /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		6F1E6BCC26D9928700A8B775 /* GitHub-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1E6BCF26D9928700A8B775 /* GitHub_ClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_ClientApp.swift; sourceTree = "<group>"; };
 		6F1E6BD126D9928700A8B775 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		6F1E6BE826D9928800A8B775 /* GitHub-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHub-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1E6BEC26D9928800A8B775 /* GitHub_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_ClientUITests.swift; sourceTree = "<group>"; };
 		6F1E6BEE26D9928800A8B775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3BE70726DA566800213F3B /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,8 @@
 		6F1E6BCE26D9928700A8B775 /* GitHub-Client */ = {
 			isa = PBXGroup;
 			children = (
-				6F1B68FB26D9948000DE5CFC /* schema.docs.graphql */,
+				6F1B68FB26D9948000DE5CFC /* Queries.graphql */,
+				6F3BE70726DA566800213F3B /* schema.json */,
 				6F1E6BCF26D9928700A8B775 /* GitHub_ClientApp.swift */,
 				6F1E6BD126D9928700A8B775 /* ContentView.swift */,
 				6F1E6BD326D9928800A8B775 /* Assets.xcassets */,
@@ -260,7 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1B68FC26D9948000DE5CFC /* schema.docs.graphql in Resources */,
+				6F3BE70826DA566900213F3B /* schema.json in Resources */,
+				6F1B68FC26D9948000DE5CFC /* Queries.graphql in Resources */,
 				6F1E6BD726D9928800A8B775 /* Preview Assets.xcassets in Resources */,
 				6F1E6BD426D9928800A8B775 /* Assets.xcassets in Resources */,
 			);
