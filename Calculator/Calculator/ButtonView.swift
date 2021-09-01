@@ -13,13 +13,14 @@ struct ButtonView: View {
   
   var body: some View {
     Button(title) {
-      value = title
+      value += title
     }
     .foregroundColor(.black)
     .font(Font.system(size: 25, weight: .semibold))
     .frame(width: 50, height: 50)
     .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
     .border(Color.black, width: 2)
+    .accessibility(identifier: "\(title) number")
   }
 }
 

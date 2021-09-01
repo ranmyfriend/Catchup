@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+//ButtonView holds this struct
 struct Number {
-  var value: String
+  var title: String //"0"
+  var value: Int //0
+  var isSymbol: Bool // false
 }
 
 struct ContentView: View {
@@ -16,45 +19,68 @@ struct ContentView: View {
   
   var body: some View {
     ScrollView {
-      VStack(alignment: .leading) {
-        TextField("", text: $input)
-          .font(Font.system(size: 25, weight: .semibold))
-          .frame(width: .infinity, height: 55)
-          .foregroundColor(.white)
-          .background(Color.gray)
-          .multilineTextAlignment(.trailing)
+      VStack {
+        HStack {
+          TextField("", text: $input)
+            .font(Font.system(size: 25, weight: .semibold))
+            .frame(height: 55)
+            .foregroundColor(.white)
+            .background(Color.gray)
+            .multilineTextAlignment(.trailing)
+            .accessibility(identifier: "output-textfield")
+        }
+        .padding([.leading, .trailing], 20)
+         
+        Spacer(minLength: 20)
         
-        Spacer(minLength: 25)
+        VStack {
+          
+          HStack {
+            ButtonView(title: .constant("7"), value: $input)
+            ButtonView(title: .constant("8"), value: $input)
+            ButtonView(title: .constant("9"), value: $input)
+            ButtonView(title: .constant("+"), value: $input)
+          }
+
+          HStack {
+            ButtonView(title: .constant("4"), value: $input)
+            ButtonView(title: .constant("5"), value: $input)
+            ButtonView(title: .constant("6"), value: $input)
+            ButtonView(title: .constant("-"), value: $input)
+          }
+          
+          HStack {
+            ButtonView(title: .constant("1"), value: $input)
+            ButtonView(title: .constant("2"), value: $input)
+            ButtonView(title: .constant("3"), value: $input)
+            ButtonView(title: .constant("*"), value: $input)
+          }
+
+          HStack {
+            ButtonView(title: .constant("/"), value: $input)
+            ButtonView(title: .constant("0"), value: $input)
+            ButtonView(title: .constant("."), value: $input)
+            ButtonView(title: .constant("="), value: $input)
+          }
+        }
+        .padding([.leading,.trailing], 20)
+
+        Spacer(minLength: 20)
         
         HStack {
-          ButtonView(title: .constant("7"), value: $input)
-            .accessibility(label: Text("7 number"))
-            .accessibility(value: Text("7"))
-          ButtonView(title: .constant("8"), value: $input)
-          ButtonView(title: .constant("9"), value: $input)
-          ButtonView(title: .constant("+"), value: $input)
+          Button("CLEAR") {
+            input = "0"
+          }
+          .frame(height: 50)
+          .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
+          .border(Color.black, width: 1)
         }
-        HStack {
-          ButtonView(title: .constant("4"), value: $input)
-          ButtonView(title: .constant("5"), value: $input)
-          ButtonView(title: .constant("6"), value: $input)
-          ButtonView(title: .constant("-"), value: $input)
-        }
-        HStack {
-          ButtonView(title: .constant("1"), value: $input)
-          ButtonView(title: .constant("2"), value: $input)
-          ButtonView(title: .constant("3"), value: $input)
-          ButtonView(title: .constant("*"), value: $input)
-        }
-        HStack {
-          ButtonView(title: .constant("/"), value: $input)
-          ButtonView(title: .constant("0"), value: $input)
-          ButtonView(title: .constant("."), value: $input)
-          ButtonView(title: .constant("="), value: $input)
-        }
+        .padding([.leading,.trailing], 20)
       }
+      .accessibility(identifier: "primary-vstack")
       .padding([.leading,.trailing], 20)
-    }
+
+    }.accessibility(identifier: "parent-scrollview")
     .navigationTitle("CALCULATOR")
   }
   
