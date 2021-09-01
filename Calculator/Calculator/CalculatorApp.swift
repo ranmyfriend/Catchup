@@ -11,8 +11,7 @@ import SwiftUI
 struct CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-          SampleView()
-//            ContentView()
+            ContentView()
 //              .embedInNavigationView()
         }
     }
