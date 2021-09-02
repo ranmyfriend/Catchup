@@ -12,7 +12,7 @@ struct CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//              .embedInNavigationView()
+              .embedInNavigationView()
         }
     }
 }

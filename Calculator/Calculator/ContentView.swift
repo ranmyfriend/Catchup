@@ -44,31 +44,33 @@ struct ContentView: View {
         VStack {
           
           HStack {
-            BView(title: .constant("7"), value: $input)
-            BView(title: .constant("8"), value: $input)
-            BView(title: .constant("9"), value: $input)
-            BView(title: .constant("+"), value: $input)
+            let firstOrderNums = ["7", "8", "9", "+"]
+            ForEach(firstOrderNums, id: \.self) {
+              BView(title: .constant($0), value: $input)
+            }
           }
 
           HStack {
-            BView(title: .constant("4"), value: $input)
-            BView(title: .constant("5"), value: $input)
-            BView(title: .constant("6"), value: $input)
-            BView(title: .constant("-"), value: $input)
+            let firstOrderNums = ["4", "5", "6", "-"]
+            ForEach(firstOrderNums, id: \.self) {
+              BView(title: .constant($0), value: $input)
+            }
           }
           
           HStack {
-            BView(title: .constant("1"), value: $input)
-            BView(title: .constant("2"), value: $input)
-            BView(title: .constant("3"), value: $input)
-            BView(title: .constant("*"), value: $input)
+            let firstOrderNums = ["1", "2", "3", "*"]
+            ForEach(firstOrderNums, id: \.self) {
+              BView(title: .constant($0), value: $input)
+            }
+            
           }
 
           HStack {
-            BView(title: .constant("/"), value: $input)
-            BView(title: .constant("0"), value: $input)
-            BView(title: .constant("."), value: $input)
-            BView(title: .constant("="), value: $input)
+            let firstOrderNums = ["/", "0", ".", "="]
+            ForEach(firstOrderNums, id: \.self) {
+              BView(title: .constant($0), value: $input)
+            }
+            
           }
         }
         
