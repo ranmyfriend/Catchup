@@ -8,13 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-  var emojis = ["🚲", "🚂", "🚁","🚜",
-                "🚕", "🥩","🚀", "🎊",
-                "🍊", "🍓","🍇", "🥥",
-                "🥒","🛴", "🚅", "🚑",
-                "🚤", "🔌", "☎️", "🏀",
-                "🏏", "🎱", "🤼‍♂️", "🥌",
-                "🦠", "💣", "💊", "🪆" ]
+  var emojis = ["🚲", "🚂", "🚁","🚜", "🚕", "🛴", "🚑", "🚅",
+                "🍖", "🌽", "🍊", "🍓","🍇", "🥥", "🥒","🥝",
+                "🏂", "🏀", "🏋️‍♀️", "🏏", "🎱", "🤼‍♂️", "⛹️‍♀️","🚴‍♂️"]
   
  @State var emojiCount = 20
   
@@ -32,15 +28,26 @@ struct ContentView: View {
       .foregroundColor(.red)
       
       Spacer()
-      HStack {
-        remove
-        Spacer()
-        add
+      VStack() {
+        HStack {
+          Text("Choose your theme?")
+            .font(.title)
+          Spacer()
+        }
+        HStack {
+        Text("Vehicles")
+          Spacer()
+          Text("Fruits")
+          Spacer()
+          Text("Sports")
+        }
+        .font(.title2)
+        .padding()
       }
-      .font(.largeTitle)
-      .padding(.horizontal)
+      .foregroundColor(Color.blue)
     }
     .padding(.horizontal)
+    .navigationTitle("Memorize!")
   }
   
   
@@ -100,9 +107,13 @@ struct CardView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+      NavigationView {
+        ContentView()
+          .preferredColorScheme(.light)
+      }
+      NavigationView {
         ContentView()
           .preferredColorScheme(.dark)
-      ContentView()
-        .preferredColorScheme(.light)
+      }
     }
 }
