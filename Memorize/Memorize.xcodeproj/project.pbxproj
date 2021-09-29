@@ -100,8 +100,8 @@
 			children = (
 				6F3A854D26DF886500290ED9 /* MemorizeApp.swift */,
 				6F3A854F26DF886500290ED9 /* ContentView.swift */,
-				6F0E114C26FF170C00026A0A /* MemoryGame.swift */,
 				6F0E114E26FF18A200026A0A /* EmojiMemoryGame.swift */,
+				6F0E114C26FF170C00026A0A /* MemoryGame.swift */,
 				6F3A855126DF886600290ED9 /* Assets.xcassets */,
 				6F3A855326DF886600290ED9 /* Preview Content */,
 			);
