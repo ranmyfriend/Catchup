@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EmojiMemoryGameView.swift
 //  Memorize
 //
 //  Created by BKS-GGS on 01/09/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EmojiMemoryGameView: View {
     /// @ObservedObject is a Property Wrapper and we have made the viewModel has Observed one. so it has some published object. So whenever there is some change in viewModel, automatically the view is going to recreated :) MVVM
     @ObservedObject var viewModel: EmojiMemoryGame
     
@@ -51,9 +51,9 @@ struct CardView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let game = EmojiMemoryGame()
-        ContentView(viewModel: game)
+        EmojiMemoryGameView(viewModel: game)
             .preferredColorScheme(.light)
-        ContentView(viewModel: game)
+        EmojiMemoryGameView(viewModel: game)
             .preferredColorScheme(.dark)
     }
 }
