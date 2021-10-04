@@ -9,6 +9,8 @@ import SwiftUI
 
 /// ViewModel
 class EmojiMemoryGame: ObservableObject {
+    typealias Card = MemoryGame<String>.Card
+    
     private static let emojis = ["🚲", "🚂", "🚁","🚜", "🚕", "🛴", "🚑", "🚅",
                                  "🍖", "🌽", "🍊", "🍓","🍇", "🥥", "🥒","🥝",
                                  "🏂", "🏀", "🏋️‍♀️", "🏏", "🎱", "🤼‍♂️", "⛹️‍♀️","🚴‍♂️"]
@@ -24,15 +26,15 @@ class EmojiMemoryGame: ObservableObject {
     /// @Published is modifier to the existing object whenever there is a change in your video model automatically respective view will get reloaded or recreated automatically
     /// ObjectWillChange.send() we explictly telling to our view please reload. because there is new change has occured recently!
     
-    @Published private var model: MemoryGame<String> = createMemoryGame()
+    @Published private var model = createMemoryGame()
     
-    var cards: Array<MemoryGame<String>.Card> {
+    var cards: Array<Card> {
         model.cards
     }
     
     // MARK: - Intent(s)
     
-    func choose(_ card: MemoryGame<String>.Card) {
+    func choose(_ card: Card) {
         model.choose(card)
     }
 }
