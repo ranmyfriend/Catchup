@@ -12,18 +12,20 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var game: EmojiMemoryGame
     
     var body: some View {
-        ScrollView {
-            /* LazyVGrid is completely lazy when accessing the CardView body */
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                ForEach(game.cards) { card in
-                    CardView(card: card)
-                        .aspectRatio(2/3, contentMode: .fit)
-                        .onTapGesture {
-                            game.choose(card)
-                        }
+//        ScrollView {
+//            /* LazyVGrid is completely lazy when accessing the CardView body */
+//            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+//                ForEach(game.cards) { card in
+        AspectVGrid(items: game.cards, aspectRatio: 2/3, content: { card in
+            CardView(card: card)
+                .aspectRatio(2/3, contentMode: .fit)
+                .onTapGesture {
+                    game.choose(card)
                 }
-            }
-        }
+        })
+//                }
+//            }
+//        }
         .foregroundColor(.red)
         .padding(.horizontal)
         .navigationTitle("MemorizeApp")
