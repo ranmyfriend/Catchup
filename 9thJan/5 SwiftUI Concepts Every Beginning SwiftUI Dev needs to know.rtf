@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AvenirNext-Regular;}
+{\colortbl;\red255\green255\blue255;\red3\green45\blue153;}
+{\*\expandedcolortbl;;\cssrgb\c0\c25950\c66514;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25080\viewh14340\viewkind0
+{\*\background {\shp{\*\shpinst\shpleft0\shptop0\shpright0\shpbottom0\shpfhdr0\shpbxmargin\shpbymargin\shpwr0\shpwrk0\shpfblwtxt1\shpz0\shplid1025{\sp{\sn shapeType}{\sv 1}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn fillColor}{\sv 720895}}{\sp{\sn fFilled}{\sv 1}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn bWMode}{\sv 9}}{\sp{\sn fBackground}{\sv 1}}}}}
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs72 \cf2 5 SwiftUI Concepts Every Beginning SwiftUI Developer Needs to know:\
+\
+1) Only 3 ways to Layout Views\
+	- Vertical Stack(VStack)\
+			Everything inside is laid out vertically on the screen.\
+	- Horizontal Stack(HStack)\
+			Everything inside is laid out horizontally	on the screen\
+	- Depth Stack(ZStack)\
+			Everything inside is laid out one on top of another.\
+\
+2)Everything is a View\
+	VStack and Color all are view. Views can be modified using Modifier. Like Text and applying font on to it, then finally you will get one view with final output(brand new view). \
+	Modifiers \
+		Views are REPLACED when modified.\
+\
+3)Parent - Child Relationship\
+\
+	VStack is a parent view and what ever inside the text views are child views. The use of changing child individually or sometimes we want to apply the font which suits for all other Childs, then apply it on parent. This is called overriding parent behaviour to his Childs. But sometime some child can have specific font also possible, then we can give individual font for them. It will applied.\
+\
+4)Pull-In & Push-Out\
+	\
+	Pull-In views are considered the textviews based on the content it occupied with limited space. But when you applied background color or some random shape then it will be taken the rest of the space from the parent view. This is called Push-Out view.\
+\
+5)Change Views with DATA\
+\
+	How do I change the background color of the view when user clicks on the button, Here \'93You cannot reference views directly. Because variables are immutable in structs.\'94, So when I change views, I have to change the data. Then whole view completely redrawn for the button click.\
+\
+\
+	}
