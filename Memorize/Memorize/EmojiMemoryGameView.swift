@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//STOPPED AT 15.06
+//STOPPED AT 55.41
 //Lecture 7
 
 struct EmojiMemoryGameView: View {
@@ -41,6 +41,8 @@ struct CardView: View {
                     .padding(5)
                     .opacity(0.5)
                 Text(card.content)
+                    .rotationEffect(Angle(degrees: card.isMatched ? 360 : 0))
+                    .animation(Animation.easeIn(duration: 2))
                     .font(font(in: geometry.size))
             }
             .cardify(isFaceUp: card.isFaceUp)
