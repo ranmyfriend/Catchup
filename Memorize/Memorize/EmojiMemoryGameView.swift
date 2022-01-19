@@ -12,9 +12,17 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var game: EmojiMemoryGame
     
     var body: some View {
+        VStack {
+            gameBody
+            shuffle
+        }
+        .padding()
+    }
+    
+    var gameBody: some View {
         AspectVGrid(items: game.cards, aspectRatio: 2/3, content: { card in
             if card.isMatched && !card.isFaceUp {
-                Rectangle().opacity(0)
+                Color.clear
             } else {
                 CardView(card: card)
                     .padding(4)
@@ -24,7 +32,14 @@ struct EmojiMemoryGameView: View {
             }
         })
             .foregroundColor(.red)
-            .padding(.horizontal)
+    }
+    
+    var shuffle: some View {
+        Button("Shuffle") {
+            withAnimation {
+                game.shuffle()
+            }
+        }
     }
 }
 
