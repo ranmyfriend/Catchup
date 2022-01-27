@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//Video stopped at 1.15.13
+
 struct EmojiMemoryGameView: View {
     /// @ObservedObject is a Property Wrapper and we have made the viewModel has Observed one. so it has some published object. So whenever there is some change in viewModel, automatically the view is going to recreated :) MVVM
     @ObservedObject var game: EmojiMemoryGame
@@ -123,7 +125,7 @@ struct CardView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                Pie(startAngle: Angle(degrees: 0-90), endAngle: Angle(degrees: 150-90))
+                Pie(startAngle: Angle(degrees: 0-90), endAngle: Angle(degrees: (1-card.bonusRemaining)*360-90))
                     .padding(5)
                     .opacity(0.5)
                 Text(card.content)
