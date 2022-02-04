@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UIViewPreview",
+        "repositoryURL": "https://github.com/bielikb/UIViewPreview.git",
+        "state": {
+          "branch": null,
+          "revision": "0e5a6c4715f625dcb7e211b02a9f62026cb8029b",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
