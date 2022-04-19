@@ -1,0 +1,11 @@
+//
+//  AppConfig.xcconfig
+//  MyWeather
+//
+//  Created by BKS-GGS on 20/04/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+OpenWeatherAPIKey = f2000d471d0ef1cac009aef510d331b7
