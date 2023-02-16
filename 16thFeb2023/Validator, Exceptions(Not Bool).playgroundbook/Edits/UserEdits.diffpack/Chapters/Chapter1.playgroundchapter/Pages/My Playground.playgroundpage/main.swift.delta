@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>/*
+class UserValidator {
+    
+    func checkUserNamePassword(userName: String, password: String) -&gt; Bool {
+        if(userName.count &gt; 0 &amp;&amp; password.count &gt; 0) {
+            doLogin() //Code violation. here change the function name like checkCredentialsAndDoLogin or remove doLogin function
+            return true
+        }
+        return false
+    }
+    
+    func doLogin() {
+        print("Login Successful")
+    }
+}
+*/
+
+//Prefer Exceptions to Returning Error codes
+
+//BEFORE:
+if (deletePage(page) == E_OK) {
+    if (registry.deleteReference(page.name) == E_OK) {
+        if (configKeys.deleteKey(page.name.makeKey()) == E_OK){ logger.log("page deleted");
+        } else {
+            logger.log("configKey not deleted");
+        }
+    } else {
+        logger.log("deleteReference from registry failed"); }
+} else {
+    logger.log("delete failed"); return E_ERROR;
+}
+
+//AFTER:
+try {
+    deletePage(page)
+    try {
+    deletePage(page);
+    registry.deleteReference(page.name);
+    configKeys.deleteKey(page.name.makeKey());
+}
+catch (Exception e) {
+    logger.log(e.getMessage())
+}
+    
+//Extract Try/Catch Blocks 
+
+public void delete(Page page) {
+    try {
+        deletePageAndAllReferences(page)
+    }
+    catch (Exception e) { 
+        logError(e)
+    }
+}
+private void deletePageAndAllReferences(Page page) throws Exception {
+    deletePage(page)
+    registry.deleteReference(page.name)
+    configKeys.deleteKey(page.name.makeKey())
+}
+private void logError(Exception e) {
+    logger.log(e.getMessage())
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1511}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
