@@ -7,6 +7,13 @@
 
 import UIKit
 
+/*****************************************************************************************************
+ 
+ 
+                            P O L Y M O R P H I S M
+ 
+ ***************************************************************************************************/
+
 // Problem statement: When we are going with Switch case, what are all the problems we are going to face :(
 
 //public Money calculatePay(Employee e) throws InvalidEmployeeType {
