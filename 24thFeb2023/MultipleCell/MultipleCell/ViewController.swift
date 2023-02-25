@@ -27,17 +27,23 @@ class ViewController: UIViewController {
     }
     
     enum DataSourceType {
-        case Red
-        case Blue
-        case Image
+        case Red([RedTableModel])
+        case Blue([BlueTableModel])
+        case Image([ImageTableModel])
     }
     
-    var dataSource: [DataSourceType] = [.Red, .Blue, .Image]
-    var dataSourceArray = TableDataSource.dataSource()
+    var dataSource: [DataSourceType] = [
+        DataSourceType.Red(TableDataSource.dataSource().redModels),
+        DataSourceType.Blue(TableDataSource.dataSource().blueModels),
+        DataSourceType.Image(TableDataSource.dataSource().imageModels)
+    ]
+    
+    var realDataSource: [RedCellController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        realDataSource = [RedCellController(models: TableDataSource.dataSource().redModels, delegate: self)]
         tableView.register(UINib(nibName: "RedTableViewCell", bundle: nil), forCellReuseIdentifier: "RedTableViewCell")
         tableView.register(UINib(nibName: "BlueTableViewCell", bundle: nil), forCellReuseIdentifier: "BlueTableViewCell")
         tableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
@@ -46,50 +52,93 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource {
+
+protocol RedCellControllable: AnyObject {
+    //Sending an event to the cell
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSource.count
+    //Receiving an event from the cell
+    func didTapButton()
+}
+
+extension RedCellControllable {
+    func didTapButton() { }
+}
+
+class RedCellController: RedCellControllable {
+    let models: [RedTableModel]
+    weak var delegate: RedCellControllable?
+    
+    init(models: [RedTableModel], delegate: RedCellControllable? = nil) {
+        self.models = models
+        self.delegate = delegate
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch dataSource[section] {
-        case .Red:
-            return dataSourceArray.redModels.count
-        case .Blue:
-            return dataSourceArray.blueModels.count
-        case .Image:
-            return dataSourceArray.imageModels.count
+        return models.count
+    }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RedTableViewCell", for: indexPath) as! RedTableViewCell
+        cell.model = models[indexPath.row]
+        cell.didTapButton = {[weak self] in
+            self?.delegate?.didTapButton()
         }
+        return cell
+    }
+
+}
+
+extension ViewController: UITableViewDataSource {
+    
+//    func numberOfSections(in tableView: UITableView) -> Int {
+////        return dataSource.count
+//        return 1
+//    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        realDataSource.count
+//        switch dataSource[section] {
+//        case .Red(let models):
+////            return models.count
+//
+//        case .Blue(let models):
+//            return models.count
+//        case .Image(let models):
+//            return models.count
+//        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch dataSource[indexPath.section] {
-        case .Red:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RedTableViewCell", for: indexPath) as! RedTableViewCell
-            cell.model = dataSourceArray.redModels[indexPath.row]
-            cell.delegate = self
-            return cell
-        case .Blue:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "BlueTableViewCell", for: indexPath) as! BlueTableViewCell
-            cell.model = dataSourceArray.blueModels[indexPath.row]
-            cell.delegate = self
-            return cell
-        case .Image:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
-            cell.model = dataSourceArray.imageModels[indexPath.row]
-            return cell
-        }
+        realDataSource[indexPath.row].tableView(tableView, cellForRowAt: indexPath)
+//        switch dataSource[indexPath.section] {
+//        case .Red(let models):
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "RedTableViewCell", for: indexPath) as! RedTableViewCell
+//            cell.model = models[indexPath.row]
+//            cell.delegate = self
+//            return cell
+//        case .Blue(let models):
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "BlueTableViewCell", for: indexPath) as! BlueTableViewCell
+//            cell.model = models[indexPath.row]
+//            cell.delegate = self
+//            return cell
+//        case .Image(let models):
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+//            cell.model = models[indexPath.row]
+//            return cell
+//        }
     }
 }
 
-extension ViewController: RedTableViewCellAble, BlueTableViewCellAble {
+extension ViewController: RedCellControllable, BlueTableViewCellAble {
     func didTapButton() {
         print("tapped Red color")
     }
-    
+
     func didTapToggle() {
         print("tapped Blue color")
     }
-    
+
 }
