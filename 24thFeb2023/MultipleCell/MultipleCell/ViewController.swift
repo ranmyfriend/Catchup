@@ -25,6 +25,16 @@ class ViewController: UIViewController {
             tableView.dataSource = self
         }
     }
+    
+    enum DataSourceType {
+        case Red
+        case Blue
+        case Image
+    }
+    
+    var dataSource: [DataSourceType] = [.Red, .Blue, .Image]
+    var dataSourceArray = TableDataSource.dataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,25 +44,52 @@ class ViewController: UIViewController {
         
     }
 
-
 }
 
 extension ViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return dataSource.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        switch dataSource[section] {
+        case .Red:
+            return dataSourceArray.redModels.count
+        case .Blue:
+            return dataSourceArray.blueModels.count
+        case .Image:
+            return dataSourceArray.imageModels.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(indexPath.row == 0) {
+        switch dataSource[indexPath.section] {
+        case .Red:
             let cell = tableView.dequeueReusableCell(withIdentifier: "RedTableViewCell", for: indexPath) as! RedTableViewCell
+            cell.model = dataSourceArray.redModels[indexPath.row]
+            cell.delegate = self
             return cell
-        } else if(indexPath.row == 1) {
+        case .Blue:
             let cell = tableView.dequeueReusableCell(withIdentifier: "BlueTableViewCell", for: indexPath) as! BlueTableViewCell
+            cell.model = dataSourceArray.blueModels[indexPath.row]
+            cell.delegate = self
             return cell
-        } else {
+        case .Image:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+            cell.model = dataSourceArray.imageModels[indexPath.row]
             return cell
         }
-        
     }
+}
+
+extension ViewController: RedTableViewCellAble, BlueTableViewCellAble {
+    func didTapButton() {
+        print("tapped Red color")
+    }
+    
+    func didTapToggle() {
+        print("tapped Blue color")
+    }
+    
 }
