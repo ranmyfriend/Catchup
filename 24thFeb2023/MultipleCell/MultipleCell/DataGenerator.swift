@@ -61,7 +61,11 @@ extension TableDataSource {
             ]
         }
         
-        return TableDataSource(redModels: redModels, blueModels: blueModels, imageModels: imageModels)
+        return TableDataSource(
+            redModels: redModels,
+            blueModels: blueModels,
+            imageModels: imageModels
+        )
     }
     
     

@@ -10,15 +10,14 @@ import UIKit
 //BlueTableViewCell: Rule
 //-> Simple text with blue background color and there is a Switch. And when it got toggled it should say tapped blue color
 
-protocol BlueTableViewCellAble: AnyObject {
+protocol BlueTableViewCellDelegate: AnyObject {
     func didTapToggle()
 }
 
 class BlueTableViewCell: UITableViewCell {
 
     @IBOutlet weak var txtLabel: UILabel!
-    weak var delegate: BlueTableViewCellAble?
-    var model: BlueTableModel!
+    weak var delegate: BlueTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +27,10 @@ class BlueTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+    }
+    
+    func configure(model: BlueTableModel) {
+        self.txtLabel.text = model.txt
     }
     
     @IBAction func didTapToggle(_ sender: Any) {

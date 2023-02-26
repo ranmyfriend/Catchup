@@ -23,6 +23,10 @@
 		6F0A0ADA29A929A90068B74E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0A0AD829A929A90068B74E /* ImageTableViewCell.swift */; };
 		6F0A0ADB29A929A90068B74E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F0A0AD929A929A90068B74E /* ImageTableViewCell.xib */; };
 		6F0A0ADD29AA261E0068B74E /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0A0ADC29AA261E0068B74E /* DataGenerator.swift */; };
+		6FEF1FD729AB9DD800CCCC15 /* RedCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF1FD629AB9DD800CCCC15 /* RedCellController.swift */; };
+		6FEF1FD929AB9DFC00CCCC15 /* BlueCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF1FD829AB9DFC00CCCC15 /* BlueCellController.swift */; };
+		6FEF1FDB29AB9E1800CCCC15 /* ImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF1FDA29AB9E1800CCCC15 /* ImageCellController.swift */; };
+		6FEF1FDD29AB9E5500CCCC15 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF1FDC29AB9E5500CCCC15 /* CellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		6F0A0AD829A929A90068B74E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		6F0A0AD929A929A90068B74E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		6F0A0ADC29AA261E0068B74E /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		6FEF1FD629AB9DD800CCCC15 /* RedCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCellController.swift; sourceTree = "<group>"; };
+		6FEF1FD829AB9DFC00CCCC15 /* BlueCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCellController.swift; sourceTree = "<group>"; };
+		6FEF1FDA29AB9E1800CCCC15 /* ImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellController.swift; sourceTree = "<group>"; };
+		6FEF1FDC29AB9E5500CCCC15 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +125,16 @@
 				6F0A0AA229A925DD0068B74E /* SceneDelegate.swift */,
 				6F0A0AA429A925DD0068B74E /* ViewController.swift */,
 				6F0A0ADC29AA261E0068B74E /* DataGenerator.swift */,
+				6FEF1FDC29AB9E5500CCCC15 /* CellController.swift */,
 				6F0A0AD029A927200068B74E /* RedTableViewCell.swift */,
 				6F0A0AD129A927200068B74E /* RedTableViewCell.xib */,
+				6FEF1FD629AB9DD800CCCC15 /* RedCellController.swift */,
 				6F0A0AD429A928C50068B74E /* BlueTableViewCell.swift */,
 				6F0A0AD529A928C50068B74E /* BlueTableViewCell.xib */,
+				6FEF1FD829AB9DFC00CCCC15 /* BlueCellController.swift */,
 				6F0A0AD829A929A90068B74E /* ImageTableViewCell.swift */,
 				6F0A0AD929A929A90068B74E /* ImageTableViewCell.xib */,
+				6FEF1FDA29AB9E1800CCCC15 /* ImageCellController.swift */,
 				6F0A0AA629A925DD0068B74E /* Main.storyboard */,
 				6F0A0AA929A925DE0068B74E /* Assets.xcassets */,
 				6F0A0AAB29A925DE0068B74E /* LaunchScreen.storyboard */,
@@ -283,9 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F0A0AA529A925DD0068B74E /* ViewController.swift in Sources */,
+				6FEF1FD729AB9DD800CCCC15 /* RedCellController.swift in Sources */,
+				6FEF1FD929AB9DFC00CCCC15 /* BlueCellController.swift in Sources */,
 				6F0A0AA129A925DD0068B74E /* AppDelegate.swift in Sources */,
 				6F0A0AA329A925DD0068B74E /* SceneDelegate.swift in Sources */,
+				6FEF1FDB29AB9E1800CCCC15 /* ImageCellController.swift in Sources */,
 				6F0A0ADA29A929A90068B74E /* ImageTableViewCell.swift in Sources */,
+				6FEF1FDD29AB9E5500CCCC15 /* CellController.swift in Sources */,
 				6F0A0AD229A927200068B74E /* RedTableViewCell.swift in Sources */,
 				6F0A0ADD29AA261E0068B74E /* DataGenerator.swift in Sources */,
 				6F0A0AD629A928C50068B74E /* BlueTableViewCell.swift in Sources */,
