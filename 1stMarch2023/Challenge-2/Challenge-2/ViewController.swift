@@ -49,8 +49,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let c: A = C()
-        c.f()
+//        let c: A = C()
+//        c.f()
+        
+        
     }
 
 

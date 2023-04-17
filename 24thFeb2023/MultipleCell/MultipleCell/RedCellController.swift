@@ -8,9 +8,16 @@
 import Foundation
 import UIKit
 
+//Feedback
+/*
+ 1)there should not be controller(ie.naming) ex: RedCellController
+ 2)Static vs dynamic refer.NSNotificationCenter
+ */
+
+
 class RedCellController: CellController {
     let models: [RedTableModel]
-    weak var delegate: RedTableViewCellDelegate?
+    weak var delegate: RedTableViewCellDelegate? 
     
     init(models: [RedTableModel], delegate: RedTableViewCellDelegate? = nil) {
         self.models = models
